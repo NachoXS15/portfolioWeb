@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro"
+import Banner from "../components/Banner.astro"
 ---
 
 <html lang="en">
@@ -12,6 +13,22 @@ import Header from "../components/Header.astro"
 	</head>
 	<body>
 		<Header />
-		
+		<Banner />
 	</body>
 </html>
+
+<style>
+	*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    :root {
+        --purple-main: #242034;
+        --purple-second: #d4d0e9;
+        --grey: #919191;
+        --black: #131111;
+        --white: #ffffff;
+    }
+</style>

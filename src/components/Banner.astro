@@ -1,3 +1,81 @@
-<div>
-    
-</div>
+<section id="banner">
+    <div>
+        <div id="banner-text-top">
+            <h2>Ignacio J. Pantoja</h2>
+        </div>
+        <div id="banner-text-bottom">
+            <h4>Front-End Developer</h4>
+        </div>
+    </div>
+    <div id="profile"></div>
+</section>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --purple-main: #242034;
+        --purple-second: #d4d0e9;
+        --grey: #919191;
+        --black: #131111;
+        --white: #ffffff;
+    }
+    #banner {
+        width: 100%;
+        height: 650px;
+        background: linear-gradient(var(--black) 430px, var(--white) 430px);
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #banner-text-top {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-family: Poppins;
+        font-weight: 600;
+    }
+
+    h2 {
+        margin: 15px 80px;
+    }
+
+    #banner-text-bottom {
+        height: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        color: #131111;
+        font-family: Poppins;
+        font-weight: 100;
+    }
+
+    h4 {
+        margin: 10px 80px;
+    }
+
+    #profile {
+        width: 45%;
+        height: 100%;
+        background-color: #242034;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        background-image: url(/public/nacho.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+</style>
