@@ -1,0 +1,31 @@
+---
+const {pageTitle} = Astro.props
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{pageTitle}</title>
+    <link rel="shortcut icon" href="/public/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <slot/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        :root {
+            --purple-main: #242034;
+            --purple-second: #d4d0e9;
+            --grey: #919191;
+            --black: #131111;
+            --white: #ffffff;
+        }
+    </style>
+</body>
+</html>
