@@ -1,25 +1,28 @@
 ---
 ---
+<main>
+    <section>
+        <div class="fondo" id="foto">
+            <h2>Fotografo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
+        </div>
+        <div class="fondo" id="prog">
+            <h2>Programador</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
+        </div>
+        <div class="fondo" id="dis">
+            <h2>Diseñador</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
+        </div>
+    </section>
 
-<section>
-    <div class="fondo" id="foto">
-        <h2>Fotografo</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
-    </div>
-    <div class="fondo" id="prog">
-        <h2>Programador</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
-    </div>
-    <div class="fondo" id="dis">
-        <h2>Diseñador</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
-    </div>
-</section>
+</main>
 
 <style>
-    section{
-        width: 100%;
+    main{
         height: 650px;
+    }
+    section{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -28,7 +31,7 @@
     
     div{
         width: 33%;
-        height: 100%;
+        height: 650px;
         border: 1px solid black;
         display: flex;
         justify-content: center;
@@ -37,6 +40,11 @@
         font-family: Poppins;
         padding: 20px;
         text-align: center;
+        transition: 0.5s;
+    }
+
+    section div:hover{
+        transform: scale(1.1);
     }
 
     div h2, p{
