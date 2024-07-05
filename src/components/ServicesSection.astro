@@ -1,35 +1,48 @@
 ---
+import {Code, Design, Photographer} from './ui/sgvs'
 ---
-<main>
-    <section>
-        <div class="fondo" id="foto">
-            <h2>Fotografo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
+
+<main class="w-4/5 h-[300px] border-s border-red-700 text-semi-black flex justify-around items-center">
+    <section class="grid grid-cols-3 text-center">
+        <div class="flex flex-col items-center">
+            <Photographer />
+            <h2 class="text-3xl font-bold">Fotografo</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                ab?
+            </p>
         </div>
-        <div class="fondo" id="prog">
-            <h2>Programador</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
+        <div class="flex flex-col items-center">
+            <Code />
+            <h2 class="text-3xl font-bold">Programador</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                ab?
+            </p>
         </div>
-        <div class="fondo" id="dis">
-            <h2>Diseñador</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab?</p>
+        <div class="flex flex-col items-center">
+            <Design />
+            <h2 class="text-3xl font-bold">Diseñador</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                ab?
+            </p>
         </div>
     </section>
-
 </main>
 
-<style>
-    main{
+<!-- <style>
+    main {
         height: 600px;
     }
-    section{
+    section {
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 999;
     }
-    
-    div{
+
+    div {
         width: 33%;
         height: 600px;
         border: 1px solid black;
@@ -43,38 +56,38 @@
         transition: 0.2s;
     }
 
-    section div:hover{
+    section div:hover {
         transform: scale(1.05);
     }
 
-    div h2, p{
+    div h2,
+    p {
         background-color: rgba(0, 0, 0, 0.8);
         padding: 5px 10px;
     }
 
-    div h2{
+    div h2 {
         font-size: 1.8em;
     }
-    div p{
+    div p {
         width: 60%;
-        font-size: 1.5em
+        font-size: 1.5em;
     }
-    
-    #foto{
+
+    #foto {
         background-image: url(/public/foto.jpg);
     }
-    #prog{
+    #prog {
         background-image: url(/public/prog.jpg);
     }
-    #dis{
+    #dis {
         background-image: url(/public/dis.jpg);
     }
 
-    .fondo{
+    .fondo {
         color: white;
         background-size: cover;
         background-position: center;
         background-color: rgba(0, 0, 0, 0.8);
     }
-
-    </style>
+</style> -->
