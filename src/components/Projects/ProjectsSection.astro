@@ -1,0 +1,23 @@
+---
+import Projects from "./Projects";
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<section class="w-3/4 h-fit mt-5 text-semi-black flex flex-col items-center md:w-3/4">
+    <h2 class="text-center font-bold text-3xl">Projects</h2>
+    <div class="w-full m-5 flex flex-col items-center justify-center gap-1 flex-wrap md:flex-row" style="margin 0 auto">
+        {
+            Projects.map((project) => (
+                <ProjectCard
+                    title={project.title}
+                    desc={project.Desc}
+                    link={project.link}
+                    repo={project.repo}
+                    frame={project.frame}
+                    lenguage={project.lenguage}
+                    img={project.img}
+                />
+            ))
+        }
+    </div>
+</section>

@@ -1,14 +1,26 @@
 ---
+interface Props {
+    title: string
+    desc: string
+    link: string
+    repo: string
+    frame?: string
+    lenguage: string
+    img: string
+}
 
+const {title, desc, lenguage, link, frame, img, repo} = Astro.props
 ---
-
-<div>
+<article class="w-full h-[250px] border border-semi-black md:w-1/3">
+    <div style="background-image: url();"></div>
     <div>
-
+        <h2>{title}</h2>
+        <p>{desc}</p>
+        <a href={link}></a>
+        <a href={repo}></a>
+        <nav>
+            <p>{lenguage}</p>
+            <p>{frame}</p>
+        </nav>
     </div>
-    <h2></h2>
-    <p></p>
-    <nav>
-        
-    </nav>
-</div>
+</article>
