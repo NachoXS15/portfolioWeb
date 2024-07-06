@@ -2,8 +2,8 @@
 import {Code, Design, Photographer} from './ui/sgvs'
 ---
 
-<main class="w-4/5 h-[300px] border-s border-red-700 text-semi-black flex justify-around items-center">
-    <section class="grid grid-cols-3 text-center">
+<main class="w-4/5 h-[300px] mt-10 text-semi-black flex flex-col justify-around items-center">
+    <section class="flex flex-col justify-around items-center text-center gap-4 md:flex-row ">
         <div class="flex flex-col items-center">
             <Photographer />
             <h2 class="text-3xl font-bold">Fotografo</h2>
@@ -30,64 +30,3 @@ import {Code, Design, Photographer} from './ui/sgvs'
         </div>
     </section>
 </main>
-
-<!-- <style>
-    main {
-        height: 600px;
-    }
-    section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 999;
-    }
-
-    div {
-        width: 33%;
-        height: 600px;
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-family: Poppins;
-        padding: 20px;
-        text-align: center;
-        transition: 0.2s;
-    }
-
-    section div:hover {
-        transform: scale(1.05);
-    }
-
-    div h2,
-    p {
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 5px 10px;
-    }
-
-    div h2 {
-        font-size: 1.8em;
-    }
-    div p {
-        width: 60%;
-        font-size: 1.5em;
-    }
-
-    #foto {
-        background-image: url(/public/foto.jpg);
-    }
-    #prog {
-        background-image: url(/public/prog.jpg);
-    }
-    #dis {
-        background-image: url(/public/dis.jpg);
-    }
-
-    .fondo {
-        color: white;
-        background-size: cover;
-        background-position: center;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-</style> -->

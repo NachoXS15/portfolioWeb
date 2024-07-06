@@ -1,20 +1,38 @@
-const Projects: object  = {
-    "Password Generator": {
-
+const Projects  = [
+    {
+        "title": "Feria del Libro",
+        "Desc": "Web Interactiva para la Feria del Libro 20240",
+        "link": "https://feria-del-libro.netlify.app/",
+        "repo": "https://github.com/NachoXS15/FeriaDelLibro",
+        "frame": "React",
+        "lenguage": "TypeScript"
     },
-    "Focus-App": {
-
+    {
+        "title": "Password Generator",
+        "Desc": "Si necesitás una contraseña segura y confiable, una API_KEY propia, o similar, esta app es para vos",
+        "link": "https://nachoxs15.github.io/Pass-Generator/",
+        "repo": "https://github.com/NachoXS15/Pass-Generator",
+        "frame": "",
+        "lenguage": "JavaScript"
     },
-    "Random Selector": {
-
+    {
+        "title": "Feria del Libro",
+        "Desc": "Web Interactiva para la Feria del Libro 20240",
+        "link": "https://feria-del-libro.netlify.app/",
+        "repo": "https://github.com/NachoXS15/FeriaDelLibro",
+        "frame": "React",
+        "lenguage": "TypeScript"
     },
-    "Feria Del Libro": {
-
+    {
+        "title": "Feria del Libro",
+        "Desc": "Web Interactiva para la Feria del Libro 20240",
+        "link": "https://feria-del-libro.netlify.app/",
+        "repo": "https://github.com/NachoXS15/FeriaDelLibro",
+        "frame": "React",
+        "lenguage": "TypeScript"
     },
-    "HardTech": {
+    
+]
 
-    },
-    "XSTCH-Logs": {
-        
-    }
-}
+
+export default Projects
