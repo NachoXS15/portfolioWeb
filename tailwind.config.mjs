@@ -6,7 +6,8 @@ export default {
 			'purple main': '#242043',
 			'purple-second': '#d4d0e9',
 			'grey': "#919191",
-			"semi-black": "#131111"
+			"semi-black": "#131111",
+			"white": "#f8f4e8"
 		}
 	},
 	plugins: [],

@@ -3,9 +3,8 @@ import ProjectsColection from './Projects'
 import ProjectCard from "./ProjectCard.astro";
 ---
 
-<section class="w-3/4 h-fit mt-5 text-semi-black flex flex-col items-center md:w-3/4">
-    <h2 class="text-center font-bold text-3xl">Projects</h2>
-    <div class="w-full m-5 flex flex-col items-center justify-center gap-1 flex-wrap md:flex-row" style="margin 0 auto">
+<section >
+    <div class="w-4/5 m-14 mt-20 flex flex-col items-center justify-center gap-1 flex-wrap md:flex-row md:w-full md:m-5" style="margin 0 auto">
         {
             ProjectsColection.map((project) => (
                 <ProjectCard
