@@ -1,5 +1,5 @@
 ---
-import Projects from "./Projects";
+import ProjectsColection from './Projects'
 import ProjectCard from "./ProjectCard.astro";
 ---
 
@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard.astro";
     <h2 class="text-center font-bold text-3xl">Projects</h2>
     <div class="w-full m-5 flex flex-col items-center justify-center gap-1 flex-wrap md:flex-row" style="margin 0 auto">
         {
-            Projects.map((project) => (
+            ProjectsColection.map((project) => (
                 <ProjectCard
                     title={project.title}
                     desc={project.Desc}

@@ -1,4 +1,4 @@
-const Projects = [
+const ProjectsColection = [
     {
         "title": "Feria del Libro",
         "Desc": "Web Interactiva para la Feria del Libro 20240",
@@ -54,4 +54,4 @@ const Projects = [
 ]
 
 
-export default Projects
+export default ProjectsColection;
