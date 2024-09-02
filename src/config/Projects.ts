@@ -9,6 +9,15 @@ const Projects = [
         "img": "/assets/feria-del-libro.png"
     },
     {
+        "title": "TravelGit",
+        "Desc": "Web oficial para la agencia de viajes TravelGit",
+        "link": "https://travelgit.tur.ar",
+        "repo": "https://github.com/NachoXS15/travelGIT",
+        "frame": "React",
+        "lenguage": "TypeScript",
+        "img": "/assets/travelgit.png"
+    },
+    {
         "title": "Password Generator",
         "Desc": "Si necesitás una contraseña segura y confiable, una API_KEY propia, o similar, esta app es para vos",
         "link": "https://nachoxs15.github.io/Pass-Generator/",
@@ -27,33 +36,23 @@ const Projects = [
         "img": "/assets/selector.png"
     },
     {
-        "title": "Feria del Libro",
-        "Desc": "Web Interactiva para la Feria del Libro 20240",
-        "link": "https://feria-del-libro.netlify.app/",
-        "repo": "https://github.com/NachoXS15/FeriaDelLibro",
+        "title": "Festipeques",
+        "Desc": "Juegos interactivos para el Festipeques 2024",
+        "link": "https://festipeques.netlify.app/",
+        "repo": "https://github.com/NachoXS15/FestiPeques",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/feria-del-libro.png"
+        "img": "/assets/festipeques.png"
     },
     {
-        "title": "Password Generator",
-        "Desc": "Si necesitás una contraseña segura y confiable, una API_KEY propia, o similar, esta app es para vos",
-        "link": "https://nachoxs15.github.io/Pass-Generator/",
-        "repo": "https://github.com/NachoXS15/Pass-Generator",
-        "frame": "",
-        "lenguage": "JavaScript",
-        "img": "/assets/feria-del-libro.png"
-
-    },
-    {
-        "title": "Feria del Libro",
-        "Desc": "Web Interactiva para la Feria del Libro 20240",
-        "link": "https://feria-del-libro.netlify.app/",
-        "repo": "https://github.com/NachoXS15/FeriaDelLibro",
+        "title": "Feria de la Música ",
+        "Desc": "Juegos interactivos para la Feria de la Música 2024",
+        "link": "https://feria-musica.netlify.app/",
+        "repo": "https://github.com/NachoXS15/FeriaMusica",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/feria-del-libro.png"
-    }
+        "img": "/assets/feria_musica.png"
+    },
 ]
 
 

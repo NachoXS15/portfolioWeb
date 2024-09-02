@@ -1,19 +1,36 @@
 ---
 import {Instagram, Github, Gmail, Linkedin} from '../components/ui/sgvs'
+import { Icons, IconsColors } from "../config/Icons"
+import { CiGlobe } from "react-icons/ci";
+
+//
+const AstroIcon = Icons["astro"]
+const AstroColor = IconsColors["white"]
+
+//
+const TailwindIcon = Icons["tailwind"]
+const TailwindColor = IconsColors["cyan"]
 ---
-<footer class="w-full h-[200px] flex flex-col justify-around items-center pt-4 bg-semi-black md:flex-row">
-    <div class="pl-4 h-fit text-center md:text-start md:border-l-4">
-        <h3 class="text-xl font-bold">Ignacio Joaquín Pantoja</h3>
-        <p>La Rioja, Argentina</p>
-    </div>
-    <hr class="w-3/5 inline border-white border md:hidden">
-    <div class="flex flex-col items-center gap-2 md:items-start">
-        <h4>Contacto</h4>
-        <div class="flex gap-4">
-            <a class="hover:scale-125 transition" target="_blank" href="https://instagram.com/nachoxs_"><Instagram /></a>
-            <a class="hover:scale-125 transition" target="_blank" href="mailto:pantojaignacio642@gmail.com"><Gmail /></a>
-            <a class="hover:scale-125 transition" target="_blank" href="https://www.linkedin.com/in/nachoxs15/"><Linkedin /></a>
-            <a class="hover:scale-125 transition" target="_blank" href="https://github.com/NachoXS15"><Github /></a>
+<footer class="w-full h-fit pt-10 md:pt-14 flex flex-col justify-around gap-14 bg-semi-black">
+    <div class="w-full flex justify-around flex-col md:flex-row items-center gap-5 md:gap-10">
+        <div class="pl-4 h-fit text-center md:text-start md:border-l-4">
+            <h3 class="text-xl font-bold">Ignacio Joaquín Pantoja</h3>
+            <p>La Rioja, Argentina</p>
         </div>
+        <hr class="w-3/5 inline border-white border md:hidden">
+        <div class="flex flex-col items-center gap-2 md:items-start">
+            <h4>Contacto</h4>
+            <div class="flex gap-4">
+                <a class="hover:scale-125 transition" target="_blank" href="https://instagram.com/nachoxs_"><Instagram /></a>
+                <a class="hover:scale-125 transition" target="_blank" href="mailto:pantojaignacio642@gmail.com"><Gmail /></a>
+                <a class="hover:scale-125 transition" target="_blank" href="https://www.linkedin.com/in/nachoxs15/"><Linkedin /></a>
+                <a class="hover:scale-125 transition" target="_blank" href="https://github.com/NachoXS15"><Github /></a>
+            </div>
+        </div>
+    </div>
+    <div class="w-full text-center flex justify-center gap-2 mb-5">
+        <span>Hecho en</span>
+        <span>{AstroIcon && (<AstroIcon size={24} color={AstroColor} />)}</span>
+        <span>{TailwindIcon && (<TailwindIcon size={24} color={TailwindColor} />)}</span>
     </div>
 </footer>

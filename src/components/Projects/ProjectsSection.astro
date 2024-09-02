@@ -2,9 +2,8 @@
 import Projects from "../../config/Projects";
 import ProjectCard from "./ProjectCard.astro";
 ---
-
 <section>
-    <div class="w-4/5 m-14 mt-20 flex flex-col items-center justify-center gap-1 flex-wrap md:flex-row md:w-full md:m-5" style="margin 0 auto">
+    <div class="w-full px-5 mt-20 flex flex-col items-center justify-center mb-4 gap-5 flex-wrap md:flex-row">
         {
             Projects.map((project) => (
                 <ProjectCard
