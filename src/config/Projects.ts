@@ -6,7 +6,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/FeriaDelLibro",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/feria-del-libro.png"
+        "img": "/assets/feria-del-libro.jpg"
     },
     {
         "title": "TravelGit",
@@ -15,7 +15,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/travelGIT",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/travelgit.png"
+        "img": "/assets/travelgit.jpg"
     },
     {
         "title": "Password Generator",
@@ -24,7 +24,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/Pass-Generator",
         "frame": "",
         "lenguage": "JavaScript",
-        "img": "/assets/passwords.png"
+        "img": "/assets/passwords.jpg"
     },
     {
         "title": "Random Selector",
@@ -33,7 +33,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/randomSelectorAppTS",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/selector.png"
+        "img": "/assets/selector.jpg"
     },
     {
         "title": "Festipeques",
@@ -42,7 +42,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/FestiPeques",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/festipeques.png"
+        "img": "/assets/festipeques.jpg"
     },
     {
         "title": "Feria de la Música ",
@@ -51,7 +51,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/FeriaMusica",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/feria_musica.png"
+        "img": "/assets/feria_musica.jpg"
     },
 ]
 
