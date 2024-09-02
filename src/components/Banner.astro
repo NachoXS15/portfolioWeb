@@ -1,67 +1,31 @@
-<section id="banner" class="max-w-fill flex flex-col md:flex-row">
-    <div>
-        <div id="banner-text-top">
-            <h2 class="text-2xl">Ignacio J. Pantoja</h2>
+<section id="banner" class="w-full relative md:static h-[650px] flex flex-col-reverse text-white justify-center items-center md:flex-row">
+    <div class="w-[55%] md:mt-[476px] z-50 h-full flex justify-center items-center  md:items-start flex-col text-center">
+        <div class="flex justify-start absolute md:static items-start font-semibold font-poppins">
+            <h2 class="text-2xl md:my-5 md:mx-20">Ignacio J. Pantoja</h2>
         </div>
-        <div id="banner-text-bottom">
-            <h4 class="font-normal my-8-4">Front-End Developer</h4>
+        <div
+            id="banner-text-bottom"
+            class="md:h-1/2 flex justify-start items-start md:text-semi-black font-poppins"
+        >
+            <h4 class="font-normal mt-20 md:mt-0 md:my-2 md:mx-20 text-center">Front-End Developer</h4>
         </div>
+        </div>
+        <div
+            id="profile"
+            style="background-image: url(/assets/nacho.jpg);"
+            class="w-full h-full absolute bg-fixed md:bg-local md:static md:w-[45%] md:h-[650px] bg-opacity-15 bg-center bg-cover"
+        >
+        <div class="bg-semi-black w-full h-full bg-cover bg-opacity-40 absolute md:hidden"></div>
     </div>
-    <div id="profile"></div>
 </section>
 <style>
     #banner {
-        width: 100%;
-        height: 650px;
         background: linear-gradient(#131111 430px, #fff 430px);
-        color: var(--white);
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
-    div {
-        width: 55%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #banner-text-top {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        font-family: Poppins;
-        font-weight: 600;
-    }
-
-    h2 {
-        margin: 15px 80px;
-    }
-
-    #banner-text-bottom {
-        height: 50%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        color: #131111;
-        font-family: Poppins;
-        font-weight: 100;
-    }
-
-    h4 {
-        margin: 10px 80px;
-    }
-
-    #profile {
-        width: 45%;
-        height: 650px;
-        background-color: #242034;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-        background-image: url(/assets/nacho.jpg);
-        background-size: cover;
-        background-position: center;
+    @media screen and (min-width: 768px) {
+        #profile {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        }
     }
 </style>
