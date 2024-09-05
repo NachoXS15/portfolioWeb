@@ -1,12 +1,62 @@
-<nav class="w-full py-2.5 flex justify-around items-center bg-semi-black text-white">
+---
+import { Github, Instagram, Linkedin } from "./ui/sgvs";
+---
+
+<nav class="w-full md:py-2.5 px-10 md:px-0 flex justify-between md:justify-around items-center bg-semi-black text-white relative">
     <div aria-hidden class="hidden md:block">
-        <a class="font-medium" href="../pages/services.astro" style="margin-right: 20px;"
-            >SERVICES</a
-        >
-        <a class="font-medium" href="../pages/">PROJECTS</a>
+        <a class="font-medium" href="../pages/services.astro" style="margin-right: 20px;">SKILLS</a>
+        <a class="font-medium" href="../pages/">ESTUDIOS</a>
     </div>
-    <img src="/assets/logo.png" width="60" alt="" />
+    <img src="/assets/logo.png" class="w-24 h-24 md:w-16 md:h-16" alt="" />
     <div aria-hidden class="hidden md:block">
         <a class="font-medium" href="">CONTACT</a>
-    </div>  
+    </div>
+    <button id="menu-button"
+      data-collapse-toggle="navbar-sticky"
+      data-nav-toggle="#navbar-sticky"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="navbar-sticky"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"></path>
+      </svg>
+    </button>
 </nav>
+<div class="hidden md:hidden w-full bg-semi-black absolute top-20 z-50"  id="menu-open">
+    <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
+        <nav class="w-full flex flex-col gap-4 p-5 font-medium">
+            <a class="font-medium text-white" href="../pages/services.astro" style="margin-right: 20px;">SKILLS</a>
+            <a class="font-medium text-white" href="../pages/">EDUCACIÓN</a>
+            <a class="font-medium text-white" href="">PROYECTOS</a>
+            <a class="font-medium text-white" href="">CONTACTO</a>
+            <div class="flex gap-5 mt-4">
+                <Github />
+                <Instagram />
+                <Linkedin />
+            </div>
+        </nav>
+    </div>
+
+</div>
+
+<script>
+    const button = document.querySelector('#menu-button') as Element;
+    const menuOpen = document.querySelector("#menu-open") as Element;
+
+    button?.addEventListener("click", () => {
+        menuOpen.classList.toggle("hidden");
+    });
+</script>
