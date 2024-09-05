@@ -7,8 +7,9 @@ import { Github, Instagram, Linkedin } from "./ui/sgvs";
         <a class="font-medium" href="../pages/services.astro" style="margin-right: 20px;">SKILLS</a>
         <a class="font-medium" href="../pages/">ESTUDIOS</a>
     </div>
-    <img src="/assets/logo.png" class="w-24 h-24 md:w-16 md:h-16" alt="" />
+    <a href="/"><img src="/assets/logo.png" class="w-24 h-24 md:w-16 md:h-16" alt="" /></a>
     <div aria-hidden class="hidden md:block">
+        <a class="font-medium" href="/projects" style="margin-right: 20px;">PROYECTOS</a>
         <a class="font-medium" href="">CONTACT</a>
     </div>
     <button id="menu-button"
@@ -38,9 +39,9 @@ import { Github, Instagram, Linkedin } from "./ui/sgvs";
 <div class="hidden md:hidden w-full bg-semi-black absolute top-20 z-50"  id="menu-open">
     <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
         <nav class="w-full flex flex-col gap-4 p-5 font-medium">
-            <a class="font-medium text-white" href="../pages/services.astro" style="margin-right: 20px;">SKILLS</a>
-            <a class="font-medium text-white" href="../pages/">EDUCACIÓN</a>
-            <a class="font-medium text-white" href="">PROYECTOS</a>
+            <a class="font-medium text-white" href="" style="margin-right: 20px;">SKILLS</a>
+            <a class="font-medium text-white" href="">EDUCACIÓN</a>
+            <a class="font-medium text-white" href="/projects">PROYECTOS</a>
             <a class="font-medium text-white" href="">CONTACTO</a>
             <div class="flex gap-5 mt-4">
                 <Github />
@@ -49,9 +50,7 @@ import { Github, Instagram, Linkedin } from "./ui/sgvs";
             </div>
         </nav>
     </div>
-
 </div>
-
 <script>
     const button = document.querySelector('#menu-button') as Element;
     const menuOpen = document.querySelector("#menu-open") as Element;

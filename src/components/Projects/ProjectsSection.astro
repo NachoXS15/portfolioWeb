@@ -3,7 +3,7 @@ import Projects from "../../config/Projects";
 import ProjectCard from "./ProjectCard.astro";
 ---
 <section>
-    <div class="w-full mt-10 flex flex-col justify-center mb-4 gap-5 flex-wrap md:flex-row">
+    <div class="w-full mt-10 px-5 flex flex-col justify-center mb-4 gap-5 flex-wrap md:flex-row">
         {
             Projects.slice(0, 2).map((project) => (
                 <ProjectCard
