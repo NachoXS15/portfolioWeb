@@ -1,0 +1,35 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../components/Layout.astro";
+import Projects from "../config/Projects";
+import ProjectCard from "../components/Projects/ProjectCard.astro";
+---
+
+<Layout pageTitle="Proyectos" pageDescription="Proyectos creados por Ignacio Pantoja">
+    <main class="w-full h-full">
+        <section class="w-full h-72 bg-opacity-20 bg-grey bg-center"
+        style="background-image: url('https://loopgk.com/wp-content/uploads/2021/02/lenguaje-min.jpg'); clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+">
+            <div class="w-full h-full flex justify-center items-center bg-semi-black bg-opacity-60">
+                <h2 class="text-5xl md:text-7xl font-bold">PROYECTOS</h2>
+            </div>
+        </section>
+        <section>
+            <div class="w-full mt-10 px-5 flex flex-col justify-center mb-4 gap-5 flex-wrap md:flex-row">
+                {
+                    Projects.map((project) => (
+                        <ProjectCard
+                            title={project.title}
+                            desc={project.Desc}
+                            link={project.link}
+                            repo={project.repo}
+                            frame={project.frame}
+                            lenguage={project.lenguage}
+                            img={project.img}
+                        />
+                    ))
+                }
+            </div>
+        </section>
+    </main>
+</Layout>
