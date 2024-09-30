@@ -53,6 +53,15 @@ const Projects = [
         "lenguage": "TypeScript",
         "img": "/assets/feria_musica.jpg"
     },
+    {
+        "title": "Nueva Era",
+        "Desc": 'Web Oficial para la Empresa de Servicios Digitales e Interactivos "Nueva Era"',
+        "link": "https://nuevaeralr.com.ar/",
+        "repo": "https://github.com/NachoXS15/nuevaEra",
+        "frame": "Tailwind",
+        "lenguage": "Astro",
+        "img": "/assets/nueva-era.png"
+    },
 ]
 
 

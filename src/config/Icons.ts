@@ -30,7 +30,7 @@ const IconsColors: { [key in DevIcon]: string} = {
     'tailwind': '#3ebff8',
     'linkedin': '#126bc4',
     'instagram': '#bb23ac',
-    'astro': '#170b29',
+    'astro': '#f67a01',
     'github': '#16181f'
 }
 
