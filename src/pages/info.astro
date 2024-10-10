@@ -1,13 +1,38 @@
 ---
+import { SiPinboard } from "react-icons/si";
 import Layout from "../components/Layout.astro";
-import { Tools } from "../components/ui/sgvs";
+import { DNI, Tools, MapPin, Phone, Mail } from "../components/ui/sgvs";
 ---
 
 <Layout pageTitle="Información" pageDescription="Habilidades y estudios" theme="dark">
-    <main class="my-20 text-semi-black text-center flex gap-3 flex-col justify-center items-centers">
-        <p class="text-3xl text-center font-bold">¡¡¡¡En construcción!!!!</p>
-        <img src="/assets/apu.jpg" width="300" alt="">
-        <a href="/" class="w-fit m-auto px-7 py-2 rounded-full bg-semi-black text-white">Volver a Inicio</a>
+    <main class="w-full min-h-screen text-semi-black text-center flex gap-3 justify-center">
+        <aside class="w-3/12 min-h-screen bg-semi-black text-white flex flex-col">
+            <div class="w-full h-1/2 bg-center bg-cover" style="background-image: url('/assets/nacho2.jpg');"></div>
+            <div class="w-full h-1/2 mt-10 flex flex-col gap-5 items-start px-5">
+                <div class="text-center">
+                    <p class="self-center font-bold text-2xl">Ignacio Joaquín Pantoja</p>
+                    <hr class="w-20 text-center border-2 mt-2" />
+                </div>
+                <div class="flex items-center gap-2">
+                    <DNI />
+                    <span class="text-md">44.008.496</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <MapPin />
+                    <span class="text-md">La Rioja, Argentina</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <Mail />
+                    <span class="text-md">pantojaignacio642@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <Phone />
+                    <span class="text-md">+54 9 3804-800454</span>
+                </div>
+            </div>
+        </aside>
+        <section class="w-4/12 min-h-screen"></section>
+        <section class="w-5/12 min-h-screen bg-semi-black"></section>
+        
     </main>
-    <section></section>
 </Layout>

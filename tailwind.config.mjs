@@ -7,7 +7,7 @@ export default {
 			'purple-second': '#d4d0e9',
 			'grey': "#919191",
 			"semi-black": "#131111",
-			"white": "#f8f4e8",
+			"white": "#fff",
 			"darkblue": ""
 		},
 		extend: {
