@@ -62,6 +62,15 @@ const Projects = [
         "lenguage": "Astro",
         "img": "/assets/nueva-era.png"
     },
+    {
+        "title": "Organización y Desarrollo",
+        "Desc": 'Diseño y Desarrollo de LandingPage para Organización y Desarrollo"',
+        "link": "https://organizacion-y-desarrollo.netlify.app/",
+        "repo": "https://github.com/NachoXS15/oyd-web",
+        "frame": "Tailwind",
+        "lenguage": "Astro",
+        "img": "/assets/oyd.png"
+    },
 ]
 
 

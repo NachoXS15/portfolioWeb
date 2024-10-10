@@ -5,9 +5,10 @@ import Header from './Header.astro';
 interface Props {
     pageTitle: string;
     pageDescription: string;
+    theme: string
 }
 
-const { pageTitle, pageDescription } = Astro.props;
+const { pageTitle, pageDescription, theme } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,7 +21,7 @@ const { pageTitle, pageDescription } = Astro.props;
         <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
     </head>
     <body class="w-full min-h-screen flex flex-col justify-between items-center">
-        <Header />
+        <Header theme={theme} />
             <slot />
         <Footer />
     </body>

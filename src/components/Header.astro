@@ -1,13 +1,20 @@
 ---
 import { Github, Instagram, Linkedin } from "./ui/sgvs";
+
+// Recibe los props correctamente desde Astro
+interface Props {
+  theme: string;
+}
+
+// Accede a los props que estás pasando al componente
+const { theme } = Astro.props;
 ---
 
-<nav class="w-full md:py-2.5 px-10 md:px-0 flex justify-between md:justify-around items-center bg-semi-black text-white relative">
+<nav class={`w-full md:py-2.5 px-10 md:px-0 flex justify-between md:justify-around items-center relative ${theme === "dark" ? 'bg-semi-black text-white' : "bg-white text-semi-black"}`}>
     <div aria-hidden class="hidden md:block">
-        <a class="font-medium" href="/skills" style="margin-right: 20px;">SKILLS</a>
-        <a class="font-medium" href="/estudios">ESTUDIOS</a>
+        <a class="font-medium" href="/info">INFORMACIÓN</a>
     </div>
-    <a href="/"><img src="/assets/logo.png" class="w-24 h-24 md:w-16 md:h-16" alt="" /></a>
+    <a href="/"><img src={`${theme === "dark" ? '/assets/logo.png' : '/assets/logo_negro.png'}`} class="w-24 h-24 md:w-16 md:h-16" alt="" /></a>
     <div aria-hidden class="hidden md:block">
         <a class="font-medium" href="/project" style="margin-right: 20px;">PROYECTOS</a>
         <a class="font-medium" href="/">CONTACT</a>
@@ -36,13 +43,13 @@ import { Github, Instagram, Linkedin } from "./ui/sgvs";
       </svg>
     </button>
 </nav>
-<div class="hidden md:hidden w-full bg-semi-black absolute top-20 z-50"  id="menu-open">
+
+<div class={`hidden md:hidden w-full ${theme === "dark" ? 'bg-semi-black text-white' : "bg-white text-semi-black"} absolute top-20 z-50`} id="menu-open">
     <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
         <nav class="w-full flex flex-col gap-4 p-5 font-medium">
-            <a class="font-medium text-white" href="" style="margin-right: 20px;">SKILLS</a>
-            <a class="font-medium text-white" href="">EDUCACIÓN</a>
-            <a class="font-medium text-white" href="/project">PROYECTOS</a>
-            <a class="font-medium text-white" href="/">CONTACTO</a>
+            <a class="font-medium" href="">INFORMACIÓN</a>
+            <a class="font-medium" href="/project">PROYECTOS</a>
+            <a class="font-medium" href="/">CONTACTO</a>
             <div class="flex gap-5 mt-4">
                 <Github />
                 <Instagram />
@@ -51,6 +58,7 @@ import { Github, Instagram, Linkedin } from "./ui/sgvs";
         </nav>
     </div>
 </div>
+
 <script>
     const button = document.querySelector('#menu-button') as Element;
     const menuOpen = document.querySelector("#menu-open") as Element;
