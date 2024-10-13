@@ -8,11 +8,11 @@ interface Props {
 const { theme } = Astro.props;
 ---
 
-<nav class={`w-full md:py-2.5 px-10 md:px-0 flex justify-between md:justify-around items-center relative ${theme === "dark" ? 'bg-semi-black text-white' : "bg-white text-semi-black"}`}>
+<nav class={`w-full animate-slide-in-top md:py-2.5 px-10 md:px-0 flex justify-between md:justify-around items-center relative ${theme === "dark" ? 'bg-semi-black text-white' : "bg-white text-semi-black"}`}>
     <div aria-hidden class="hidden md:block">
         <a class="font-medium" href="/">INFORMACIÓN</a>
     </div>
-    <a href="/"><img src={`${theme === "dark" ? '/assets/logo.png' : '/assets/logo_negro.png'}`} class="w-24 h-24 md:w-16 md:h-16" alt="" /></a>
+    <a href="/" class="animate-slide-in-top"><img src={`${theme === "dark" ? '/assets/logo.png' : '/assets/logo_negro.png'}`} class="w-24 h-24 md:w-16 md:h-16" alt="" /></a>
     <div aria-hidden class="hidden md:block">
         <a class="font-medium" href="/project" style="margin-right: 20px;">PROYECTOS</a>
         <a class="font-medium" href="/">CONTACT</a>
