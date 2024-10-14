@@ -1,9 +1,16 @@
-<section class="w-full min-h-screen text-white bg-semi-black flex items-center flex-col">
-    <h2 class="text-3xl font-bold mt-10">Mis Lenguajes y Frameworks</h2>
-    <div class="w-4/5 h-[300px] border my-5 border-white">
-        
+---
+import { CSS } from "./ui/Lenguages";
+import { Html5 } from "./ui/Lenguages";
+---
+<section
+    class="w-full min-h-screen text-white bg-semi-black flex items-center flex-col"
+>
+    <h2 class="text-3xl font-bold mt-10 text-center">Mis Lenguajes y Frameworks</h2>
+    <div class="w-4/5 h-[300px] flex justify-center flex-wrap border my-5 border-white">
+        <Html5 size={48} />
+        <CSS size={48} />
     </div>
-    <h2 class="text-3xl font-bold mt-10">Mis Herramientas</h2>
-    <div class="w-4/5 h-[300px] border my-5 border-white">
+    <h2 class="text-3xl font-bold mt-10 text-center">Mis Herramientas</h2>
+    <div class="w-3/5 h-[300px] border my-5 border-white">
     </div>
 </section>

@@ -6,7 +6,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/FeriaDelLibro",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/feria-del-libro.jpg"
+        "img": "/assets/projects/feria-del-libro.jpg"
     },
     {
         "title": "TravelGit",
@@ -15,7 +15,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/travelGIT",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/travelgit.jpg"
+        "img": "/assets/projects/travelgit.jpg"
     },
     {
         "title": "Password Generator",
@@ -24,7 +24,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/Pass-Generator",
         "frame": "",
         "lenguage": "JavaScript",
-        "img": "/assets/passwords.jpg"
+        "img": "/assets/projects/passwords.jpg"
     },
     {
         "title": "Random Selector",
@@ -33,7 +33,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/randomSelectorAppTS",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/selector.jpg"
+        "img": "/assets/projects/selector.jpg"
     },
     {
         "title": "Festipeques",
@@ -42,7 +42,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/FestiPeques",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/festipeques.jpg"
+        "img": "/assets/projects/festipeques.jpg"
     },
     {
         "title": "Feria de la Música ",
@@ -51,7 +51,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/FeriaMusica",
         "frame": "React",
         "lenguage": "TypeScript",
-        "img": "/assets/feria_musica.jpg"
+        "img": "/assets/projects/feria_musica.jpg"
     },
     {
         "title": "Nueva Era",
@@ -60,7 +60,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/nuevaEra",
         "frame": "Tailwind",
         "lenguage": "Astro",
-        "img": "/assets/nueva-era.png"
+        "img": "/assets/projects/nueva-era.png"
     },
     {
         "title": "Organización y Desarrollo",
@@ -69,7 +69,7 @@ const Projects = [
         "repo": "https://github.com/NachoXS15/oyd-web",
         "frame": "Tailwind",
         "lenguage": "Astro",
-        "img": "/assets/oyd.png"
+        "img": "/assets/projects/oyd.png"
     },
 ]
 
