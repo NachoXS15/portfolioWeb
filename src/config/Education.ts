@@ -28,27 +28,31 @@ const education: EducationProps[] = [
         since: "2023",
         grade: "Curso",
         ongoing: false,
+        degree: "https://drive.google.com/file/d/1fs7J5gvivAOo7O1CLAxgpyyIZPL3FNPj/view?usp=sharing"
     },
     {
         title: 'Programación Web con JavaScript',
         institute: "Universidad Tecnológica Nacional",
         since: "2022",
         grade: "Curso",
-        ongoing: false
+        ongoing: false,
+        degree: "https://drive.google.com/file/d/1SBy1Kweo0J1E_1MSkbf0LYm5H_3etbgB/view?usp=sharing"
     },
     {
         title: 'Diseño Gráfico Digital',
         institute: "Universidad Tecnológica Nacional",
         since: "2022",
         grade: "Curso",
-        ongoing: false
+        ongoing: false,
+        degree: "https://drive.google.com/file/d/15sVOEqpnHJbVrg3tENhFEGd015hdlf-h/view?usp=sharing"
     },
     {
         title: 'Técnico en Reparación de Computadoras',
         institute: "Universidad Tecnológica Nacional",
-        since: "2022",
+        since: "2021",
         grade: "Curso",
-        ongoing: false
+        ongoing: false,
+        degree: "https://drive.google.com/file/d/1TT34VGgXa59ljrInZM0nVNSdrXJbfQ6S/view?usp=sharing"
     },
 ]
 

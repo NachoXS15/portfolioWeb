@@ -1,5 +1,6 @@
 ---
 import education from "../config/Education";
+import { Link } from "./ui/sgvs";
 ---
 
 <section class="w-full md:w-1/2 md:px-5 h-fit flex flex-col items-center">
@@ -17,6 +18,15 @@ import education from "../config/Education";
                     <p class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{edu.institute}</p>
                     <p class="font-semibold">Año: <span class="font-normal">{edu.since}</span></p>
                     <p class="font-semibold">Nivel: <span class="font-normal">{edu.grade}</span></p>
+                    {
+                        edu.degree &&
+                            <a href={edu.degree} target="_blank" class={`flex items-center gap-2 underline`}>
+                                Ver certificado 
+                                <span>
+                                    <Link />
+                                </span>
+                            </a>
+                    }
                 </li>
             ))
         }

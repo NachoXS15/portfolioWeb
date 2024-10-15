@@ -18,6 +18,24 @@ const Projects = [
         "img": "/assets/projects/travelgit.jpg"
     },
     {
+        "title": "Nueva Era",
+        "Desc": 'Web Oficial para la Empresa de Servicios Digitales e Interactivos "Nueva Era"',
+        "link": "https://nuevaeralr.com.ar/",
+        "repo": "https://github.com/NachoXS15/nuevaEra",
+        "frame": "Tailwind",
+        "lenguage": "Astro",
+        "img": "/assets/projects/nueva-era.png"
+    },
+    {
+        "title": "Organización y Desarrollo",
+        "Desc": 'Diseño y Desarrollo de LandingPage para Organización y Desarrollo"',
+        "link": "https://organizacion-y-desarrollo.netlify.app/",
+        "repo": "https://github.com/NachoXS15/oyd-web",
+        "frame": "Tailwind",
+        "lenguage": "Astro",
+        "img": "/assets/projects/oyd.png"
+    },
+    {
         "title": "Password Generator",
         "Desc": "Si necesitás una contraseña segura y confiable, una API_KEY propia, o similar, esta app es para vos",
         "link": "https://nachoxs15.github.io/Pass-Generator/",
@@ -52,24 +70,6 @@ const Projects = [
         "frame": "React",
         "lenguage": "TypeScript",
         "img": "/assets/projects/feria_musica.jpg"
-    },
-    {
-        "title": "Nueva Era",
-        "Desc": 'Web Oficial para la Empresa de Servicios Digitales e Interactivos "Nueva Era"',
-        "link": "https://nuevaeralr.com.ar/",
-        "repo": "https://github.com/NachoXS15/nuevaEra",
-        "frame": "Tailwind",
-        "lenguage": "Astro",
-        "img": "/assets/projects/nueva-era.png"
-    },
-    {
-        "title": "Organización y Desarrollo",
-        "Desc": 'Diseño y Desarrollo de LandingPage para Organización y Desarrollo"',
-        "link": "https://organizacion-y-desarrollo.netlify.app/",
-        "repo": "https://github.com/NachoXS15/oyd-web",
-        "frame": "Tailwind",
-        "lenguage": "Astro",
-        "img": "/assets/projects/oyd.png"
     },
 ]
 
