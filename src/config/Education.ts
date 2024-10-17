@@ -16,13 +16,6 @@ const education: EducationProps[] = [
         ongoing: true
     },
     {
-        title: 'Formación Secundaria Completa',
-        institute: "Colegio San Francisco de Asis",
-        since: "Promoción 2019",
-        grade: "Secundario",
-        ongoing: false
-    },
-    {
         title: 'MERN Stack',
         institute: "Polo Tecnológico",
         since: "2023",
@@ -53,6 +46,13 @@ const education: EducationProps[] = [
         grade: "Curso",
         ongoing: false,
         degree: "https://drive.google.com/file/d/1TT34VGgXa59ljrInZM0nVNSdrXJbfQ6S/view?usp=sharing"
+    },
+    {
+        title: 'Formación Secundaria Completa',
+        institute: "Colegio San Francisco de Asis",
+        since: "Promoción 2019",
+        grade: "Secundario",
+        ongoing: false
     },
 ]
 
