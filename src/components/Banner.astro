@@ -1,4 +1,13 @@
-<section id="banner" class="w-full relative md:static h-[650px] flex flex-col-reverse text-white justify-center items-center md:flex-row">
+---
+interface Props{
+    title: string
+    color: string
+}
+
+const {title, color} = Astro.props
+---
+
+<section id="banner" style={`background: linear-gradient(${color === "black" ? "#131111" : "#242034"} 430px, #fff 430px);`} class="w-full relative md:static h-[650px] flex flex-col-reverse text-white justify-center items-center md:flex-row">
     <div class="w-[55%] md:mt-[476px] z-50 h-full flex justify-center items-center  md:items-start flex-col text-center">
         <div class="flex justify-start absolute md:static items-start font-semibold font-poppins">
             <h2 class="text-2xl md:my-5 md:mx-20">Ignacio J. Pantoja</h2>
@@ -7,7 +16,7 @@
             id="banner-text-bottom"
             class="md:h-1/2 flex justify-start items-start md:text-semi-black font-poppins"
         >
-            <h4 class="font-normal mt-20 md:mt-0 md:my-2 md:mx-20 text-center">Front-End Developer</h4>
+            <h4 class="font-normal mt-20 md:mt-0 md:my-2 md:mx-20 text-center">{title}</h4>
         </div>
         </div>
         <div
@@ -15,13 +24,10 @@
             style="background-image: url(/assets/nacho.jpg);"
             class="w-full h-full absolute bg-fixed md:bg-local md:static md:w-[45%] md:h-[650px] bg-opacity-15 bg-center bg-cover"
         >
-        <div class="bg-semi-black w-full h-full bg-cover bg-opacity-40 absolute md:hidden"></div>
+        <div class={`${color === "black" ? 'bg-semi-black' : "bg-purple-main"} w-full h-full bg-cover bg-opacity-40 absolute md:hidden`}></div>
     </div>
 </section>
 <style>
-    #banner {
-        background: linear-gradient(#131111 430px, #fff 430px);
-    }
 
     @media screen and (min-width: 768px) {
         #profile {

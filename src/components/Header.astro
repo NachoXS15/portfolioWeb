@@ -2,18 +2,18 @@
 import { Github, Instagram, Linkedin } from "./ui/sgvs";
 
 interface Props {
-  theme: string;
+  color: string;
 }
 
-const { theme } = Astro.props;
+const { color } = Astro.props;
 ---
 
-<nav class={`w-full animate-slide-in-top md:py-2.5 px-10 md:px-0 flex justify-between md:justify-around items-center relative ${theme === "dark" ? 'bg-semi-black text-white' : "bg-white text-semi-black"}`}>
+<nav class={`w-full animate-slide-in-top md:py-2.5 px-10 md:px-0 flex justify-between md:justify-around items-center relative ${color === "black" ? 'bg-semi-black' : "bg-purple-main "}`}>
     <div aria-hidden class="hidden md:block">
         <a class="font-medium mr-6 hover:underline transition" href="#info">INFORMACIÓN</a>
         <!-- <a class="font-medium" href="/">HABILIDADES</a> -->
     </div>
-    <a href="/" class="animate-slide-in-top hover:scale-110 transition"><img src={`${theme === "dark" ? '/assets/logo.png' : '/assets/logo_negro.png'}`} class="w-24 h-24 md:w-16 md:h-16" alt="" /></a>
+    <a href="/" class="animate-slide-in-top hover:scale-110 transition"><img src='/assets/logo.png' class="w-24 h-24 md:w-16 md:h-16" alt="" /></a>
     <div aria-hidden class="hidden md:block">
         <a class="font-medium hover:underline transition" href="/project" style="margin-right: 20px;">PROYECTOS</a>
         <a class="font-medium hover:underline transition" href="/">CONTACT</a>
@@ -43,7 +43,7 @@ const { theme } = Astro.props;
     </button>
 </nav>
 
-<div class={`hidden md:hidden w-full ${theme === "dark" ? 'bg-semi-black text-white' : "bg-white text-semi-black"} absolute top-20 z-50`} id="menu-open">
+<div class={`hidden md:hidden w-full ${color === "black" ? 'bg-semi-black' : "bg-purple-main "} absolute top-20 z-50`} id="menu-open">
     <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
         <nav class="w-full flex flex-col gap-4 p-5 font-medium">
             <a class="font-medium" href="/">INFORMACIÓN</a>

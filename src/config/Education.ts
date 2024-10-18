@@ -49,7 +49,7 @@ const education: EducationProps[] = [
     },
     {
         title: 'Formación Secundaria Completa',
-        institute: "Colegio San Francisco de Asis",
+        institute: "Colegio San Francisco de Asis - La Rioja",
         since: "Promoción 2019",
         grade: "Secundario",
         ongoing: false
