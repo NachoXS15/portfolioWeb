@@ -1,19 +1,25 @@
 ---
 import {Code, Design, Photographer} from './ui/sgvs'
+import {infodev, infovideo} from '../config/Intro'
 interface Props{
     color: string
+    profile: string
 }
 
-const {color} = Astro.props
+const {color, profile} = Astro.props
+const profileSelected = profile === "dev" ? infodev : infovideo
+
 ---
 
 <main class={`w-full h-fit ${color === "black" ? "bg-semi-black" : "bg-purple-main"} flex flex-col justify-around items-center md:h-[550px]`}>
     <section class="w-3/4 flex my-10 flex-col justify-center items-center gap-8 md:flex-row ">
         <div style='background-image: url("/assets/nacho2.jpg");' class="bg-cover bg-center rounded-lg w-full px md:w-1/4 h-[420px]"></div>
         <div class=" w-full md:w-1/2 text-xl flex flex-col items-start justify-start gap-4">
-            <p>¡Hola buenas! Bienvenido a mi página web, acá te voy a mostrar un poco de mis trabajos, mis experiencias y mis habilidades.</p>
-            <p>Actualmente soy tesista en la carrera de Diseño y Producción Multimedial, ejerzo como Desarrollador Front-end freelancer, realizando trabajos para empresas privadas como para eventos importantes dentro de mi ciudad.</p>
-            <p>También me he desarrollado como Project Leader en varios equipos de trabajo.</p>
+            {
+                profileSelected.map(text => (
+                    <p>{text}</p>
+                ))
+            }
             <a href="/project" class={`px-5 py-3 bg-white font-bold ${color === "black" ? "text-semi-black" : "text-purple-main"} rounded-full hover:scale-110 transition`}>Mis Proyectos</a>
         </div>
     </section>
