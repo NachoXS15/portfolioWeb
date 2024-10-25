@@ -52,6 +52,15 @@ const experiencesVideo: ExperienceProps[]  = [
         "web": "https://instagram.com/xs.tch_",
         "time": "Part-Time"
     },
+    {
+        "cliente": "Secretaria de Juventudes La Rioja",
+        "rol": "Fotógrafo y Videomaker",
+        "since": "jun. - ago. 2023",
+        "actual": false,
+        "desc": "Fotógrafo y generador de contenido audiovisual para la difusión de las diversas actividades, encuentros y eventos organizandos por la secretaria y/o en conjunto con el Gobierno de La Rioja",
+        "web": "https://instagram.com/xs.tch_",
+        "time": "Full-Time"
+    },
 ]
 
 export default experiencesVideo

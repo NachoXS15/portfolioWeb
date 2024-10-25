@@ -1,0 +1,12 @@
+---
+interface Props{
+    profile: string
+}
+
+const {profile} = Astro.props
+---
+
+<section class={`w-full h-fit py-2 flex flex-col justify-center ${profile == "editor" ? 'bg-purple-main' : 'bg-semi-black'}`}>
+    <h2>Mis Habilidades</h2>
+    <div></div>
+</section>
