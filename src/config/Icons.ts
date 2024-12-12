@@ -11,6 +11,9 @@ export type DevIcon =
     | 'react'
     | 'javascript'
     | 'tailwind'
+    | 'html'
+    | 'css'
+    | 'git'
 
 const Icons: { [key in DevIcon]: IconType } = {
     'astro': SI.SiAstro,
@@ -20,7 +23,10 @@ const Icons: { [key in DevIcon]: IconType } = {
     'linkedin': SI.SiLinkedin,
     'react' : SI.SiReact,
     'javascript': SI.SiJavascript,
-    'tailwind': SI.SiTailwindcss
+    'tailwind': SI.SiTailwindcss,
+    'html': SI.SiHtml5,
+    'css': SI.SiCss3,
+    'git': SI.SiGit
 }
 
 const IconsColors: { [key in DevIcon]: string} = {
@@ -31,7 +37,10 @@ const IconsColors: { [key in DevIcon]: string} = {
     'linkedin': '#126bc4',
     'instagram': '#bb23ac',
     'astro': '#f67a01',
-    'github': '#16181f'
+    'github': '#16181f',
+    'html': "#e5532d",
+    "css": "#2167b2",
+    'git': "#f05539"
 }
 
 
