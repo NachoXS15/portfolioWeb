@@ -36,7 +36,29 @@ interface Props{
 const {profile} = Astro.props
 ---
 
-<section class={`w-full h-fit py-2 flex flex-col justify-center ${profile == "editor" ? 'bg-purple-main' : 'bg-semi-black'}`}>
-    <h2>Mis Habilidades</h2>
-    <div></div>
+<section class={`w-full h-fit py-10 flex flex-col justify-center items-center ${profile == "editor" ? 'bg-purple-main' : 'bg-semi-black'}`}>
+    <div class="w-4/5 flex flex-col md:flex-row items-center justify-center">
+        <div class="px-5">
+            <h2 class="font-bold text-4xl my-10 self-start">Información</h2>
+            <ul class="text-2xl">
+                <li><strong>Nombre:</strong>Ignacio Joaquín Pantoja</li>
+                <li><strong>Edad:</strong>22 años</li>
+                <li><strong>Estado Civil:</strong>Soltero</li>
+                <li><strong>Fecha de Nacimiento:</strong>03 de Mayo de 2002</li>
+                <li><strong>Lugar de residencia:</strong>La Rioja, Argentina</li>
+                <li><strong>Cuil:</strong>20-44008496-7</li>
+            </ul>
+        </div>
+        <div class="px-5">
+            <h2 class="font-bold text-4xl my-10 self-start">Información</h2>
+            <ul>
+                <li><strong>Nombre:</strong>Ignacio Joaquín Pantoja</li>
+                <li><strong>Edad:</strong>22 años</li>
+                <li><strong>Estado Civil:</strong>Soltero</li>
+                <li><strong>Fecha de Nacimiento:</strong>03 de Mayo de 2002</li>
+                <li><strong>Lugar de residencia:</strong>La Rioja, Argentina</li>
+                <li><strong>Cuil:</strong>20-44008496-7</li>
+            </ul>
+        </div>
+    </div>
 </section>
