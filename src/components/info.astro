@@ -12,7 +12,7 @@ interface Props {
 const {profile, color} = Astro.props
 ---
 
-    <section class={`w-4/5 h-fit ${color === "black" ? "text-semi-black" : "text-purple-main"}`} id="info">
+    <section class={`xl:w-4/5 h-fit ${color === "black" ? "text-semi-black" : "text-purple-main"}`} id="info">
         <section class="w-full flex flex-col md:flex-row items-start justify-center h-fit">
             <ExperiencesBlock profile={profile} />
             <EducationBlock />
