@@ -15,7 +15,7 @@ const {profile} = Astro.props
             <h2 class="font-bold text-4xl mb-2 self-start">Información</h2>
             <hr class="w-20 text-center border-2 mb-8" />
 
-            <div class="w-full flex flex-col gap-5 items-start md:pl-5">
+            <div class="w-full flex flex-col gap-5 items-start lg:pl-5">
                 <div class="">
                     <p class="self-center font-bold text-2xl">Ignacio Joaquín Pantoja</p>
                 </div>
@@ -40,9 +40,11 @@ const {profile} = Astro.props
         </div>
         <hr class="block md:hidden w-20 m-auto text-center border-2 my-10" />
 
-        <div class="w-full md:w-1/2 flex items-center xl:items-start px-5 md:px-14 flex-col">
-            <h2 class="font-bold text-4xl mb-8 self-start">Habilidades</h2>
-            <div class="w-full lg:w-4/5 px-5">
+        <div class="w-full md:w-1/2 flex items-center xl:items-start px-5 lg:px-14 flex-col">
+            <h2 class="font-bold text-4xl mb-2 self-start">Habilidades</h2>
+            <hr class="w-20 self-start border-2 mb-8" />
+
+            <div class="w-full lg:w-4/5 md:px-5">
                 <div class="mb-8">
                     <h2 class="text-2xl">Lenguajes</h2>
                     <div class="text-base mt-2 flex flex-wrap gap-4">
@@ -78,7 +80,7 @@ const {profile} = Astro.props
                 </div>
                 <div class="mb-8">
                     <h2 class="text-2xl">Frameworks y Utils</h2>
-                    <div class="text-base mt-2 flex gap-4">
+                    <div class="text-base mt-2 flex flex-wrap gap-4">
                         <div class="flex items-center flex-col">
                             <span>{Icons.ReactIcon && <Icons.ReactIcon size={50} color={Icons.ReactColor} />}</span>
                             <p>React</p>
@@ -107,7 +109,7 @@ const {profile} = Astro.props
                 </div>
                 <div class="mb-8">
                     <h2 class="text-2xl">Herramientas</h2>
-                    <div class="text-base mt-2 flex gap-4">
+                    <div class="text-base mt-2 flex flex-wrap gap-4">
                         <div class="flex items-center flex-col">
                             <span>{Icons.GitIcon && <Icons.GitIcon size={50} color={Icons.GitColor}  />}</span>
                             <p>Git</p>
