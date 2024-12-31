@@ -1,44 +1,6 @@
 ---
-import { Icons, IconsColors } from "../config/Icons"
+import * as Icons from '../config/Icons'
 import { DNI, MapPin, Mail, Phone } from "./ui/sgvs"
-
-const HtmlIcon = Icons["Html"]
-const HtmlColor = IconsColors["html"]
-
-const CSSIcon = Icons["css"]
-const CSSColor = IconsColors["css"]
-
-const JSIcon = Icons["javascript"]
-const JSColor = IconsColors["javascript"]
-
-const ReactIcon = Icons["react"]
-const ReactColor = IconsColors["react"]
-
-const AstroIcon = Icons["astro"]
-const AstroColor = IconsColors["astro"]
-
-const TailwindIcon = Icons["tailwind"]
-const TailwindColor = IconsColors["cyan"]
-
-// const TailwindIcon = Icons["tailwind"]
-// const TailwindColor = IconsColors["cyan"]
-// const AstroIcon = Icons["astro"]
-// const AstroColor = IconsColors["white"]
-
-// const TailwindIcon = Icons["tailwind"]
-// const TailwindColor = IconsColors["cyan"]
-// const AstroIcon = Icons["astro"]
-// const AstroColor = IconsColors["white"]
-
-// const TailwindIcon = Icons["tailwind"]
-// const TailwindColor = IconsColors["cyan"]
-// const AstroIcon = Icons["astro"]
-// const AstroColor = IconsColors["white"]
-
-// const TailwindIcon = Icons["tailwind"]
-// const TailwindColor = IconsColors["cyan"]
-
-
 
 interface Props{
     profile: string
@@ -47,36 +9,130 @@ interface Props{
 const {profile} = Astro.props
 ---
 
-<section class={`w-full h-fit py-10 flex flex-col justify-center items-center ${profile == "editor" ? 'bg-purple-main' : 'bg-semi-black'}`}>
-    <div class="xl:w-4/5 flex flex-col md:flex-row items-center justify-center">
-        <div class="h-1/2 flex flex-col gap-5 items-start px-5">
-            <div class="text-center">
-                <p class="self-center font-bold text-2xl">Ignacio Joaquín Pantoja</p>
-                <hr class="w-20 text-center border-2 mt-2" />
-            </div>
-            <div class="flex items-center gap-2">
-                <DNI />
-                <span class="text-md">44.008.496</span>
-            </div>
-            <div class="flex items-center gap-2">
-                <MapPin />
-                <span class="text-md">La Rioja, Argentina</span>
-            </div>
-            <div class="flex items-center gap-2">
-                <Mail />
-                <span class="text-md">pantojaignacio642@gmail.com</span>
-            </div>
-            <div class="flex items-center gap-2">
-                <Phone />
-                <span class="text-md">+54 9 3804-800454</span>
+<section class={`w-full h-fit py-10 flex flex-col px-5 justify-center items-center ${profile == "editor" ? 'bg-purple-main' : 'bg-semi-black'}`}>
+    <div class="w-full xl:w-4/5 flex flex-col md:flex-row items-start justify-center">
+        <div class="w-full md:w-1/2 px-5 md:px-14">
+            <h2 class="font-bold text-4xl mb-2 self-start">Información</h2>
+            <hr class="w-20 text-center border-2 mb-8" />
+
+            <div class="w-full flex flex-col gap-5 items-start md:pl-5">
+                <div class="">
+                    <p class="self-center font-bold text-2xl">Ignacio Joaquín Pantoja</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <DNI />
+                    <span class="text-md">44.008.496</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <MapPin />
+                    <span class="text-md">La Rioja, Argentina</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <Mail />
+                    <span class="text-md">pantojaignacio642@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <Phone />
+                    <span class="text-md">+54 9 3804-800454</span>
+                </div>
+
             </div>
         </div>
-        <div class="px-5">
+        <hr class="block md:hidden w-20 m-auto text-center border-2 my-10" />
+
+        <div class="w-full md:w-1/2 flex items-center xl:items-start px-5 md:px-14 flex-col">
             <h2 class="font-bold text-4xl mb-8 self-start">Habilidades</h2>
-            <div class="text-base flex flex-col gap-1">
-                <div>
-                    <span>{AstroIcon && <AstroIcon size={24} color={AstroColor}  />}</span>
-                    <p>Astro</p>
+            <div class="w-full lg:w-4/5 px-5">
+                <div class="mb-8">
+                    <h2 class="text-2xl">Lenguajes</h2>
+                    <div class="text-base mt-2 flex flex-wrap gap-4">
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.HtmlIcon && <Icons.HtmlIcon size={50} color={Icons.HtmlColor}  />}</span>
+                            <p>HTML</p>
+                        </div>
+                        <div class="text-center">
+                            <span>{Icons.CSSIcon && <Icons.CSSIcon size={50} color={Icons.CSSColor}  />}</span>
+                            <p>CSS</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.JSIcon && <Icons.JSIcon size={50} color={Icons.JSColor}  />}</span>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.TSIcon && <Icons.TSIcon size={50} color={Icons.TSColor}  />}</span>
+                            <p>TypeScript</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.NodeJsIcon && <Icons.NodeJsIcon size={50} color={Icons.NodeJsColor}  />}</span>
+                            <p>NodeJS</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.SQLIcon && <Icons.SQLIcon size={50} color={Icons.SQLColor}  />}</span>
+                            <p>SQL</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.SassIcon && <Icons.SassIcon size={50} color={Icons.SassColor}  />}</span>
+                            <p>Sass</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <h2 class="text-2xl">Frameworks y Utils</h2>
+                    <div class="text-base mt-2 flex gap-4">
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.ReactIcon && <Icons.ReactIcon size={50} color={Icons.ReactColor} />}</span>
+                            <p>React</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.AstroIcon && <Icons.AstroIcon size={50} color={Icons.AstroColor}  />}</span>
+                            <p>Astro</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.TailwindIcon && <Icons.TailwindIcon size={50} color={Icons.TailwindColor}  />}</span>
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.BootstrapIcon && <Icons.BootstrapIcon size={50} color={Icons.BootstrapColor}  />}</span>
+                            <p>Boostrap</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.ExpressIcon && <Icons.ExpressIcon size={50} color={Icons.ExpressColor}  />}</span>
+                            <p>Express</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.PostgreIcon && <Icons.PostgreIcon size={50} color={Icons.PostgreColor}  />}</span>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <h2 class="text-2xl">Herramientas</h2>
+                    <div class="text-base mt-2 flex gap-4">
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.GitIcon && <Icons.GitIcon size={50} color={Icons.GitColor}  />}</span>
+                            <p>Git</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.VSCIcon && <Icons.VSCIcon size={50} color={Icons.VSCColor}  />}</span>
+                            <p>VSC</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.NotionIcon && <Icons.NotionIcon size={50} color={Icons.NotionColor}  />}</span>
+                            <p>Notion</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.FigmaIcon && <Icons.FigmaIcon size={50} color={Icons.FigmaColor}  />}</span>
+                            <p>Figma</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.AdobeXDIcon && <Icons.AdobeXDIcon size={50} color={Icons.AdobeXDColor}  />}</span>
+                            <p class="text-center">Adobe XD</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.IllustratorIcon && <Icons.IllustratorIcon size={50} color={Icons.IllustratorColor}  />}</span>
+                            <p class="text-center">Illustrator</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
