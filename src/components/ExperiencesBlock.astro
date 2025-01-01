@@ -10,9 +10,11 @@ const {profile} = Astro.props
 const profileSelected = profile === "dev" ? experiences : experiencesVideo
 ---
 
-<section class="w-full md:w-1/2 md:px-5 h-fit flex flex-col items-center">
-    <h2 class="font-bold text-4xl my-10 self-start">Experiencias</h2>
-    <ol class="md:w-4/5 relative border-s border-gray-200 text-start dark:border-gray-700">                  
+<section class="w-full md:w-1/2 md:px-14 h-fit flex flex-col items-center">
+    <h2 class="font-bold text-4xl mt-10 mb-2 self-start">Experiencias</h2>
+    <hr class="w-20 self-start border-2 mb-10" />
+
+    <ol class="w-full md:w-full lg:w-4/5 relative border-s border-gray-200 text-start dark:border-gray-700">                  
         {
             profileSelected.map(exp => (
                 <li class="mb-10 ms-6">

@@ -1,8 +1,6 @@
 ---
 import ExperiencesBlock from "./ExperiencesBlock.astro";
 import EducationBlock from './EducationBlock.astro'
-import LenguagesBlock from "./LenguagesBlock.astro";
-import SideInfo from "./SideInfo.astro";
 
 interface Props {
     profile: string
@@ -12,9 +10,10 @@ interface Props {
 const {profile, color} = Astro.props
 ---
 
-    <section class={`w-4/5 h-fit ${color === "black" ? "text-semi-black" : "text-purple-main"}`} id="info">
+    <section class={`xl:w-4/5 px-10 md:px-0 h-fit ${color === "black" ? "text-semi-black" : "text-purple-main"}`} id="info">
         <section class="w-full flex flex-col md:flex-row items-start justify-center h-fit">
             <ExperiencesBlock profile={profile} />
+            <hr class="block md:hidden w-20 m-auto text-center border-2 my-5" />
             <EducationBlock />
         </section>
     </section>
