@@ -1,6 +1,6 @@
 ---
 import * as Icons from '../config/Icons'
-import { DNI, MapPin, Mail, Phone } from "./ui/sgvs"
+import { DNI, MapPin, Mail, Phone, Balloon } from "./ui/sgvs"
 
 interface Props{
     profile: string
@@ -11,7 +11,7 @@ const {profile} = Astro.props
 
 <section class={`w-full h-fit py-10 flex flex-col px-5 justify-center items-center ${profile == "editor" ? 'bg-purple-main' : 'bg-semi-black'}`}>
     <div class="w-full xl:w-4/5 flex flex-col md:flex-row items-start justify-center">
-        <div class="w-full md:w-1/2 px-5 md:px-14">
+        <div class="w-full md:w-1/2 px-5 md:px-14 lg:px-7">
             <h2 class="font-bold text-4xl mb-2 self-start">Información</h2>
             <hr class="w-20 text-center border-2 mb-8" />
 
@@ -22,6 +22,10 @@ const {profile} = Astro.props
                 <div class="flex items-center gap-2">
                     <DNI />
                     <span class="text-md">44.008.496</span>
+                </div>
+                <div class="flex items-center justify-start gap-2">
+                    <Balloon />
+                    <span class="text-md">03/05/2002</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <MapPin />
@@ -40,7 +44,7 @@ const {profile} = Astro.props
         </div>
         <hr class="block md:hidden w-20 m-auto text-center border-2 my-10" />
 
-        <div class="w-full md:w-1/2 flex items-center xl:items-start px-5 lg:px-14 flex-col">
+        <div class="w-full md:w-1/2 flex items-center xl:items-start px-5 md:px-14 lg:px-7 flex-col">
             <h2 class="font-bold text-4xl mb-2 self-start">Habilidades</h2>
             <hr class="w-20 self-start border-2 mb-8" />
 
