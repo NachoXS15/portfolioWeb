@@ -1,5 +1,5 @@
 ---
-import { Github, Instagram, Linkedin } from "./ui/sgvs";
+import { Github, Gmail, Instagram, Linkedin } from "./ui/sgvs";
 
 interface Props {
   color: string;
@@ -46,14 +46,15 @@ const { color } = Astro.props;
 <div class={`hidden md:hidden w-full ${color === "black" ? 'bg-semi-black' : "bg-purple-main "} absolute top-20 z-50`} id="menu-open">
     <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
         <nav class="w-full flex flex-col gap-4 p-5 font-medium">
-            <a class="font-medium" href="/">INFORMACIÓN</a>
+            <a class="font-medium active:scale-110 transition" href="/">INFORMACIÓN</a>
             <!-- <a class="font-medium" href="/">HABILIDADES</a> -->
-            <a class="font-medium" href="/project">PROYECTOS</a>
-            <a class="font-medium" href="/">CONTACTO</a>
+            <a class="font-medium active:scale-110 transition" href="/project">PROYECTOS</a>
+            <a class="font-medium active:scale-110 transition" href="/">CONTACTO</a>
             <div class="flex gap-5 mt-4">
-                <Github />
-                <Instagram />
-                <Linkedin />
+                <a class="active:scale-125 transition cursor-pointer" target="_blank" href="https://github.com/nachoxs15"><Github /></a>
+                <a class="active:scale-125 transition cursor-pointer" target="_blank" href="https://instagram.com/nachoxs_"><Instagram /></a>
+                <a class="active:scale-125 transition cursor-pointer" target="_blank" href="https://linkedin.com/nachoxs15"><Linkedin /></a>
+                <a class="active:scale-125 transition cursor-pointer" target="_blank" href="mailto:pantojaignacio642@gmail.com"><Gmail /></a>
             </div>
         </nav>
     </div>
