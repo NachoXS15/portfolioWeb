@@ -3,9 +3,11 @@ import education from "../config/Education";
 import { Link } from "./ui/sgvs";
 ---
 
-<section class="w-full md:w-1/2 md:px-5 h-fit flex flex-col items-center">
-    <h2 class="font-bold text-4xl my-10 md:px-10 self-start">Estudios</h2>
-    <ol class="md:w-4/5 relative border-s border-gray-200 text-start dark:border-gray-700">                  
+<section class="w-full md:w-1/2 md:px-14 lg:px-7 h-fit flex flex-col items-center">
+    <h2 class="font-bold text-4xl mt-10 mb-2 self-start">Estudios</h2>
+    <hr class="w-20 self-start border-2 mb-10" />
+
+    <ol class="w-full md:w-full lg:w-4/5 relative border-s border-gray-200 text-start dark:border-gray-700">                  
         {
             education.map(edu => (
                 <li class="mb-10 ms-6">            

@@ -1,47 +1,40 @@
-import { string } from 'astro/zod'
-import type {IconType} from 'react-icons'
-import * as SI from 'react-icons/si'
+import {Icons, IconsColors} from './IconsSet'
 
-export type DevIcon = 
-    | 'astro'
-    | 'github'
-    | 'instagram'
-    | 'typescript'
-    | 'linkedin'
-    | 'react'
-    | 'javascript'
-    | 'tailwind'
-    | 'html'
-    | 'css'
-    | 'git'
-
-const Icons: { [key in DevIcon]: IconType } = {
-    'astro': SI.SiAstro,
-    'github': SI.SiGithub,
-    'instagram': SI.SiInstagram,
-    'typescript': SI.SiTypescript,
-    'linkedin': SI.SiLinkedin,
-    'react' : SI.SiReact,
-    'javascript': SI.SiJavascript,
-    'tailwind': SI.SiTailwindcss,
-    'html': SI.SiHtml5,
-    'css': SI.SiCss3,
-    'git': SI.SiGit
-}
-
-const IconsColors: { [key in DevIcon]: string} = {
-    'typescript': '#3178c6',
-    'javascript': '#efd81d',
-    'react': "#1399c4",
-    'tailwind': '#3ebff8',
-    'linkedin': '#126bc4',
-    'instagram': '#bb23ac',
-    'astro': '#f67a01',
-    'github': '#16181f',
-    'html': "#e5532d",
-    "css": "#2167b2",
-    'git': "#f05539"
-}
-
-
-export {Icons, IconsColors };
+export const HtmlIcon = Icons["html"]
+export const HtmlColor = IconsColors["html"]
+export const CSSIcon = Icons["css"]
+export const CSSColor = IconsColors["css"]
+export const JSIcon = Icons["javascript"]
+export const JSColor = IconsColors["javascript"]
+export const TSIcon = Icons["typescript"]
+export const TSColor = IconsColors["typescript"]
+export const ReactIcon = Icons["react"]
+export const ReactColor = IconsColors["react"]
+export const AstroIcon = Icons["astro"]
+export const AstroColor = IconsColors["astro"]
+export const TailwindIcon = Icons["tailwind"]
+export const TailwindColor = IconsColors["tailwind"]
+export const NodeJsIcon = Icons["nodejs"]
+export const NodeJsColor = IconsColors["nodejs"]
+export const SQLIcon = Icons["sql"]
+export const SQLColor = IconsColors["sql"]
+export const BootstrapIcon = Icons["bootstrap"]
+export const BootstrapColor = IconsColors["bootstrap"]
+export const ExpressIcon = Icons["express"]
+export const ExpressColor = IconsColors["express"]
+export const SassIcon = Icons["sass"]
+export const SassColor = IconsColors["sass"]
+export const GitIcon = Icons["git"]
+export const GitColor = IconsColors["git"]
+export const VSCIcon = Icons["vscode"]
+export const VSCColor = IconsColors["vscode"]
+export const NotionIcon = Icons["notion"]
+export const NotionColor = IconsColors["notion"]
+export const FigmaIcon = Icons["figma"]
+export const FigmaColor = IconsColors["figma"]
+export const AdobeXDIcon = Icons["adobexd"]
+export const AdobeXDColor = IconsColors["adobexd"]
+export const IllustratorIcon = Icons["illustrator"]
+export const IllustratorColor = IconsColors["illustrator"]
+export const PostgreIcon = Icons["postgresql"]
+export const PostgreColor = IconsColors["postgresql"]

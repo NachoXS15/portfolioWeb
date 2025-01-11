@@ -11,9 +11,9 @@ const profileSelected = profile === "dev" ? infodev : infovideo
 
 ---
 
-<main class={`w-full h-fit ${color === "black" ? "bg-semi-black" : "bg-purple-main"} flex flex-col justify-around items-center md:h-[550px]`}>
-    <section class="w-3/4 flex my-10 flex-col justify-center items-center gap-8 md:flex-row ">
-        <div style='background-image: url("/assets/nacho2.jpg");' class="bg-cover bg-center rounded-lg w-full px md:w-1/4 h-[420px]"></div>
+<main class={`w-full h-fit px-10 ${color === "black" ? "bg-semi-black" : "bg-purple-main"} flex flex-col justify-around items-center md:h-[550px]`}>
+    <section class="w-full sm:px-10 md:px-0 lg:w-3/4 flex my-10 flex-col justify-center items-center gap-8 md:flex-row ">
+        <div style='background-image: url("/assets/nacho2.webp");' class="bg-cover bg-center rounded-lg w-full px md:w-1/4 h-[420px]"></div>
         <div class=" w-full md:w-1/2 text-xl flex flex-col items-start justify-start gap-4">
             {
                 profileSelected.map(text => (
