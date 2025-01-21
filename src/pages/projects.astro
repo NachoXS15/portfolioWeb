@@ -1,0 +1,42 @@
+---
+import { promise } from "astro:schema";
+import Header from "../components/Header.astro";
+import Layout from "../components/Layout.astro";
+import ProjectCard from "../components/projectsComp/ProjectCard.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+console.log(projects);
+    
+---
+
+<Layout pageTitle="Proyectos" pageDescription="Proyectos creados por Ignacio Pantoja" color="black">
+    <main class="m-auto">
+        <section class="w-full h-72 bg-opacity-20 bg-grey bg-center"
+    style="background-image: url('https://loopgk.com/wp-content/uploads/2021/02/lenguaje-min.jpg'); clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);">
+            <div class="w-full h-full flex justify-center items-center bg-semi-black bg-opacity-60">
+                <h2 class="text-5xl md:text-7xl font-bold">PROYECTOS</h2>
+            </div>
+        </section>
+        <section class="w-full mt-10 px-5 grid grid-cols-1 lg:px-24 xl:px-44 2xl:px-64 place-items-center md:grid-cols-2 mb-4 gap-5 flex-wrap md:flex-row">
+           
+                {
+                    projects.map(project => {
+                        const {data, slug} = project
+                        const {title, desc, img} = data
+                        
+                        return(
+                            <ProjectCard 
+                            title={title}
+                            desc={desc}
+                            img={img} 
+                            sLink={slug}
+                            />
+                        )
+                    })
+                }
+
+            
+        </section>
+    </main>
+</Layout>
