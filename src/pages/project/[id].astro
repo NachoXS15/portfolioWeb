@@ -1,0 +1,50 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from '../../components/Layout.astro'
+import { Link } from '../../components/ui/sgvs'
+import * as Icons from '../../config/Icons'
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+    const projects = await getCollection("projects")
+    console.log(projects);
+
+    return projects.map((project) => ({
+        params: { id: project.slug },
+        props: { project }
+    }))
+}
+
+const { project } = Astro.props;
+const {data} = project
+const {title, desc, img, framework, lenguage, link, repo} = data
+const { Content } = await render(project)
+---
+<Layout pageTitle={`${title} - Portfolio`} pageDescription='anashe' color='black'>
+    <main class="w-full md:w-3/5 grid grid-cols-1 place-items-center text-semi-black my-10">
+        <div class="w-full h-60 border rounded-md border-semi-black"></div>
+        <div class="h-fit flex flex-col md:flex-row">
+            <div class="w-5/6">
+                <h2 class="font-bold text-3xl mt-3">{title}</h2>
+                <p class="mb-2">{desc}</p>
+                <hr class="w-20 border border-semi-black mb-4" />
+                <Content />
+            <div class="w-1/6 flex flex-col gap-5">
+                <div class="flex flex-col items-end">
+                    <h3>Hecho con:</h3>
+                    <div class="flex gap-5">
+                        <a href={repo} class="float-left">{Icons.GithubIcon && <Icons.GithubIcon size={24} color={Icons.GithubColor}  />}</a>
+                        <a href={link}><Link size={24} /></a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end">
+                    <h3>Enlaces:</h3>
+                    <div class="flex gap-5">
+                        <a href={repo} class="float-left">{Icons.GithubIcon && <Icons.GithubIcon size={24} color={Icons.GithubColor}  />}</a>
+                        <a href={link}><Link size={24} /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
