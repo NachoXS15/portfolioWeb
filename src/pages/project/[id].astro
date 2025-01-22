@@ -44,14 +44,12 @@ if (styled) {
 
 ---
 <Layout pageTitle={`${title} - Portfolio`} pageDescription='anashe' color='black'>
-    <main class="w-full md:w-3/5 grid grid-cols-1 place-items-center text-semi-black my-10">
-        <div class="w-full h-fit rounded-md bg-contain bg-no-repeat bg-center"
-            
-        >
+    <main class="w-full px-5 md:w-4/5 xl:w-3/5 grid grid-cols-1 place-items-center text-semi-black my-10">
+        <div class="w-full h-fit rounded-md bg-contain bg-no-repeat bg-center">
             <img src={`/assets/projects/${img}`} class="rounded-lg" alt="">
         </div>
         <div class="w-full h-fit mt-5 flex flex-col justify-between md:flex-row">
-            <div class="w-5/6">
+            <div class="w-full md:w-5/6">
                 <h2 class="font-bold text-3xl">{title}</h2>
                 <p class="mb-2">{desc}</p>
                 <hr class="w-20 border border-semi-black mb-4" />
@@ -59,7 +57,7 @@ if (styled) {
                     <Content />
                 </div>
             </div>
-            <div class="w-1/6 flex flex-col gap-5">
+            <div class="w-full md:w-1/6 flex flex-row justify-between md:justify-start mt-5 md:flex-col gap-5">
                 <div class="flex flex-col items-end">
                     <h3 class="font-semibold text-md">Hecho con:</h3>
                     <div class="flex gap-2 items-start">
@@ -68,7 +66,7 @@ if (styled) {
                         {styled && (<span class="float-left">{IconStyle && (<IconStyle size={45} color={ColorStyle} />)}</span>)}
                     </div>
                 </div>
-                <div class="flex flex-col items-end">
+                <div class="flex flex-col md:items-end">
                     <h3 class="font-semibold text-md">Enlaces:</h3>
                     <div class="flex gap-2 items-start justify-center">
                         <a href={repo} target="_blank" class="float-left">{IconsSet.GithubIcon && <IconsSet.GithubIcon size={40} color={IconsSet.GithubColor}  />}</a>

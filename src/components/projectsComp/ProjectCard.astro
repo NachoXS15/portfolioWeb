@@ -11,17 +11,6 @@ interface Props {
 
 const { title, desc, img, sLink} = Astro.props;
 
-// //Lenguage
-// const iconKeyLenguage = lenguage.toLowerCase() as keyof typeof Icons;
-// const IconLenguage = Icons[iconKeyLenguage];
-// const ColorLenguage = IconsColors[iconKeyLenguage];
-
-// //Frame
-// const iconKeyFrame = frame.toLowerCase() as keyof typeof Icons;
-// const IconFrame = Icons[iconKeyFrame];
-// const ColorFrame = IconsColors[iconKeyFrame];
-
-const Globe = Icons['']
 ---
 
 <article class="w-full h-[380px] md:m-2 bg-semi-black pb-4 flex flex-col justify-between items-center rounded-lg">
@@ -36,24 +25,5 @@ const Globe = Icons['']
             <p>{desc}</p>
         </div>
     </div>
-    <!-- <nav class="flex justify-end self-end pr-2 items-center gap-1">
-        <span>
-            {
-                IconLenguage && (
-                    <IconLenguage size={40} color={ColorLenguage} />
-                )
-            }
-        </span>
-        <span>
-            {
-                IconFrame && (
-                    <IconFrame size={40} color={ColorFrame} />
-                )
-            }
-        </span>
-        <span class="hover:scale-110 transition cursor-pointer">
-            <a href={link} target="_blank">{<CiGlobe size={40}/>}</a>
-        </span>
-    </nav> -->
-    <a href={`/project/${sLink}`} class="px-5 py-2 bg-white rounded-full text-semi-black font-semibold self-end mr-3 mb-3 border transition hover:bg-semi-black hover:text-white hover:border-white">Ver Más</a>
+    <a href={`/project/${sLink}`} class="px-5 py-2 bg-white rounded-full text-semi-black font-semibold self-end mr-3 mb-3 border transition hover:bg-semi-black hover:text-white hover:border-white active:text-white active:border-white active:bg-semi-black">Ver Más</a>
 </article>
