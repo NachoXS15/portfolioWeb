@@ -5,8 +5,6 @@ import ProjectCard from "../components/projectsComp/ProjectCard.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects");
-console.log(projects);
-    
 ---
 
 <Layout pageTitle="Proyectos" pageDescription="Proyectos creados por Ignacio Pantoja" color="black">

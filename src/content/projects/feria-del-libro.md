@@ -5,6 +5,7 @@ link: "https://feria-de-librooo.netflify.app"
 repo: "https://github.com/NachoXS15/FeriaDelLibro"
 framework: "React"
 lenguage: "Typescript"
+styled: "sass"
 img: "feria-del-libro.jpg"
 ---
 

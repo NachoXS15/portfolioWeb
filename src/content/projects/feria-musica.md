@@ -5,7 +5,7 @@ link: "https://festi-musica.netlify.app/"
 repo: "https://github.com/NachoXS15/FeriaMusica"
 lenguage: "TypeScript"
 framework: "React"
-styled: "Tailwind"
+styled: "tailwind"
 img: "feria_musica.jpg"
 ---
 lorem

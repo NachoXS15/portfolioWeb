@@ -5,7 +5,7 @@ link: "https://nuevaera.com.ar"
 repo: "https://github.com/NachoXS15/nuevaEra"
 framework: "Astro"
 lenguage: "TypeScript"
-styled: "Tailwind"
+styled: "tailwind"
 img: "nueva-era.png"
 ---
 
