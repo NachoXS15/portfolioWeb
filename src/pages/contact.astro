@@ -25,16 +25,18 @@ import Layout from "../components/Layout.astro";
                     >
                     <input
                         type="text"
+                        id="nombre"
                         name="nombre"
-                        class="w-full border h-10 border-semi-black"
+                        class="w-full border h-10 border-semi-black px-2"
                     />
                 </div>
                 <div class="w-full md:w-1/2 flex flex-col">
                     <label for="" class="text-md font-medium">Email</label>
                     <input
                         type="text"
+                        id="mail"
                         name="mail"
-                        class="w-full border h-10 border-semi-black"
+                        class="w-full border h-10 border-semi-black px-2"
                     />
                 </div>
             </div>
@@ -42,7 +44,7 @@ import Layout from "../components/Layout.astro";
                 <label for="" class="text-md font-medium"
                     >Mensaje/Motivo de Consulta</label
                 >
-                <textarea name="mail" class="w-full border h-60 resize-none"
+                <textarea name="consulta" id="consulta" class="w-full border h-60 resize-none p-2"
                 ></textarea>
             </div>
             <button type="submit" class="w-full h-10 mt-2 bg-semi-black text-white hover:bg-white hover:text-semi-black transition hover:border">Enviar Consulta</button>
@@ -53,11 +55,10 @@ import Layout from "../components/Layout.astro";
 <script>
     document.getElementById("form").addEventListener("submit", (e) => {
         e.preventDefault();
-        const formData = new FormData(this);
 
-        const nombre = formData.get("nombre");
-        const consulta = formData.get("consulta");
-        const mail = formData.get("email");
+        const nombre = document.getElementById("nombre").value;
+        const mail = document.getElementById("mail").value;
+        const consulta = document.getElementById("consulta").value;
 
         const message = `¡Hola! Mi nombre es ${nombre}, me comunico desde tu página web, el motivo de mi consulta es: ${consulta}. Mi email es ${mail} ¡Espero su respuesta!`;
         const phoneNumber = "543804800454";
