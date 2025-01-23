@@ -1,0 +1,29 @@
+---
+import { Icons, IconsColors } from "../../config/IconsSet";
+import { CiGlobe } from "react-icons/ci";
+
+interface Props {
+    title: string;
+    desc: string;
+    img: string;
+    sLink: string
+}
+
+const { title, desc, img, sLink} = Astro.props;
+
+---
+
+<article class="w-full h-[380px] md:m-2 bg-semi-black pb-4 flex flex-col justify-between items-center rounded-lg">
+    <div class="w-full">
+        <div
+            class="h-[200px] text-center rounded-lg bg-cover bg-start "
+            style={`background-image: url(assets/projects/${img})`}
+        >
+        </div>
+        <div class="m-2">
+            <h2 class="text-2xl font-bold">{title}</h2>
+            <p>{desc}</p>
+        </div>
+    </div>
+    <a href={`/project/${sLink}`} class="px-5 py-2 bg-white rounded-full text-semi-black font-semibold self-end mr-3 mb-3 border transition hover:bg-semi-black hover:text-white hover:border-white active:text-white active:border-white active:bg-semi-black">Ver Más</a>
+</article>

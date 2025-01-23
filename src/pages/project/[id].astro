@@ -1,0 +1,78 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from '../../components/Layout.astro'
+import { Link } from '../../components/ui/sgvs'
+import * as IconsSet from '../../config/Icons'
+import { getCollection, render } from "astro:content";
+import {Icons, IconsColors} from '../../config/IconsSet'
+import type { IconType } from "react-icons";
+
+export async function getStaticPaths() {
+    const projects = await getCollection("projects")
+
+    return projects.map((project) => ({
+        params: { id: project.slug },
+        props: { project }
+    }))
+}
+
+const { project } = Astro.props;
+const {data} = project
+const {title, desc, img, framework, lenguage, link, repo, styled} = data
+const { Content } = await render(project)
+
+//Lenguage
+const iconKeyLenguage = lenguage.toLowerCase() as keyof typeof Icons;
+const IconLenguage = Icons[iconKeyLenguage];
+const ColorLenguage = IconsColors[iconKeyLenguage];
+
+//Frame
+let IconFrame: IconType, ColorFrame: string;
+if (framework) {
+    const iconKeyFrame = framework.toLowerCase() as keyof typeof Icons;
+    IconFrame = Icons[iconKeyFrame];
+    ColorFrame = IconsColors[iconKeyFrame];
+}
+
+//style
+let IconStyle, ColorStyle
+if (styled) {
+    const iconKeyStyle = styled.toLowerCase() as keyof typeof Icons;
+    IconStyle = Icons[iconKeyStyle];
+    ColorStyle = IconsColors[iconKeyStyle];
+}
+
+---
+<Layout pageTitle={`${title} - Portfolio`} pageDescription='anashe' color='black'>
+    <main class="w-full px-5 md:w-4/5 xl:w-3/5 grid grid-cols-1 place-items-center text-semi-black my-10">
+        <div class="w-full h-fit rounded-md bg-contain bg-no-repeat bg-center">
+            <img src={`/assets/projects/${img}`} class="rounded-lg" alt="">
+        </div>
+        <div class="w-full h-fit mt-5 flex flex-col justify-between md:flex-row">
+            <div class="w-full md:w-5/6">
+                <h2 class="font-bold text-3xl">{title}</h2>
+                <p class="mb-2">{desc}</p>
+                <hr class="w-20 border border-semi-black mb-4" />
+                <div class="leading-7 md:pr-5">
+                    <Content />
+                </div>
+            </div>
+            <div class="w-full md:w-1/6 flex flex-row justify-between md:justify-start mt-5 md:flex-col gap-5">
+                <div class="flex flex-col md:items-end">
+                    <h3 class="font-semibold text-md">Hecho con:</h3>
+                    <div class="flex gap-2 items-start">
+                        <span class="float-left">{IconLenguage && (<IconLenguage size={45} color={ColorLenguage} />)}</span>
+                        {framework && (<span class="float-left">{IconFrame && (<IconFrame size={45} color={ColorFrame} />)}</span>)}
+                        {styled && (<span class="float-left">{IconStyle && (<IconStyle size={45} color={ColorStyle} />)}</span>)}
+                    </div>
+                </div>
+                <div class="flex flex-col items-end">
+                    <h3 class="font-semibold text-md">Enlaces:</h3>
+                    <div class="flex gap-2 items-start justify-center">
+                        <a href={repo} target="_blank" class="float-left">{IconsSet.GithubIcon && <IconsSet.GithubIcon size={40} color={IconsSet.GithubColor}  />}</a>
+                        <a href={link} target="_blank"><Link size={35} /></a>
+                    </div>
+                </div>
+        </div>
+    </main>
+</Layout>

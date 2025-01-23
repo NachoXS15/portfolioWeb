@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import typography from "@tailwindcss/typography"
 import animations from '@midudev/tailwind-animations'
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -19,6 +20,6 @@ export default {
 				'poppins': ['Poppins', 'sans-serif'],
 			}
 		},
-		plugins: [],
+		plugins: [typography],
 	}
 }

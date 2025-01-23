@@ -38,3 +38,5 @@ export const IllustratorIcon = Icons["illustrator"]
 export const IllustratorColor = IconsColors["illustrator"]
 export const PostgreIcon = Icons["postgresql"]
 export const PostgreColor = IconsColors["postgresql"]
+export const GithubIcon = Icons["github"];
+export const GithubColor = IconsColors["github"]
