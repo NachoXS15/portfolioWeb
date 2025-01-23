@@ -8,4 +8,4 @@ lenguage: "TypeScript"
 styled: "Tailwind"
 img: "oyd.png"
 ---
-lorem
+Versión DEMO de una landing page para la empresa Organización y Desarrollo, creada con la intencion de dar alcance a sus proyectos y logros a lo largo de su trayectoria.

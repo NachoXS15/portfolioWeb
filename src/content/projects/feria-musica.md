@@ -8,4 +8,10 @@ framework: "React"
 styled: "tailwind"
 img: "feria_musica.jpg"
 ---
-lorem
+
+Proyecto Interactivo realizado para Pantallas de Alta Resolución para la Feria de la Música 2024. Este proyecto cuenta con una playlist de Spotifyy creada para el evento con al intencion de que, mientras el usuario navega e interactua por los juegos, los cuales son:
+
+- **Trivia de Preguntas y Respuestas sobre la cultura musical.**
+- **Juego de la Memoria con un tiempo limitado.**
+
+Este es un proyecto diseñado para pantallas de alta resolución, no cuenta con diseño responsivo.

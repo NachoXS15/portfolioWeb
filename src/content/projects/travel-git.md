@@ -7,8 +7,6 @@ framework: "React"
 lenguage: "Typescript"
 img: "travelgit.jpg"
 ---
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo, odio ea nihil nemo maxime repellat repudiandae. Iusto temporibus laudantium voluptates magnam rerum aspernatur, consectetur dolores, excepturi placeat beatae aliquid!
-Officiis, deserunt voluptatibus cum consectetur voluptate, aut itaque animi blanditiis, maiores corporis eligendi optio porro. Incidunt eius sapiente quaerat facere, minima expedita quibusdam ea libero provident possimus pariatur reiciendis ipsam.
-Suscipit id pariatur esse atque. Ea molestias numquam doloribus quam autem velit, ullam repellendus veritatis fugit quod saepe eum quo beatae ducimus magnam quae veniam optio fugiat tempore quis exercitationem.
-Quaerat natus aliquid dolore amet asperiores velit debitis autem porro iusto quod quas beatae dolorem vitae nostrum, sequi vero, iste voluptatem eum! Nobis nisi obcaecati omnis adipisci mollitia non veniam?
-Ad, quidem quibusdam recusandae totam illo molestias illum aliquid unde? Numquam exercitationem omnis, esse hic odio itaque veritatis ratione recusandae, quaerat fuga nulla corrupti voluptas, repellat rem. Recusandae, maiores animi!
+Página Web desarrollada para la agencia de viajes TravelGIT, con el objetivo de dar a conocer sus paquetes de viajes y su respectiva información, ofrecer un medio de comunicación para los viajeros, y brindar una atención personalizada a través de ellos, mostrando postales que estos envian junto con sus testimonios de viaje.
+Cuenta con un sistema de administración mediante usuarios registrados para el manejo de la información de los paquetes de viajes mostrados al público.
+Cuenta con diseño responsivo y una interfáz orientada a la intuitividad para mejorar la experiencia de usuario.

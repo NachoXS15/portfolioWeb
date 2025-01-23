@@ -1,10 +1,10 @@
 ---
 title: "Password Generator"
-desc: "Si necesitas una contraseña segura y confiable, una API_KEY de prueba, o similar, esta app es para vos"
+desc: "Generador de Contraseñas seguras y confiables, o textos aleatorios."
 link: "https://nachoxs15.github.io/Pass-Generator/"
 repo: "https://github.com/NachoXS15/Pass-Generator"
 lenguage: "JavaScript"
 styled: "CSS"
 img: "passwords.jpg"
 ---
-lorem
+Mi segundo proyecto probando JavaScript Vanilla, creando una pequeña herramienta para poder crear contraseñas seguras y confiables, la cual sigo utilizando hasta el dia de hoy, no solo a la hora de crear cuentas, si no también para la creación de API_KEYs de prueba o secretos.

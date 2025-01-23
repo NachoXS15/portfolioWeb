@@ -53,12 +53,12 @@ if (styled) {
                 <h2 class="font-bold text-3xl">{title}</h2>
                 <p class="mb-2">{desc}</p>
                 <hr class="w-20 border border-semi-black mb-4" />
-                <div class="leading-7">
+                <div class="leading-7 md:pr-5">
                     <Content />
                 </div>
             </div>
             <div class="w-full md:w-1/6 flex flex-row justify-between md:justify-start mt-5 md:flex-col gap-5">
-                <div class="flex flex-col items-end">
+                <div class="flex flex-col md:items-end">
                     <h3 class="font-semibold text-md">Hecho con:</h3>
                     <div class="flex gap-2 items-start">
                         <span class="float-left">{IconLenguage && (<IconLenguage size={45} color={ColorLenguage} />)}</span>
@@ -66,7 +66,7 @@ if (styled) {
                         {styled && (<span class="float-left">{IconStyle && (<IconStyle size={45} color={ColorStyle} />)}</span>)}
                     </div>
                 </div>
-                <div class="flex flex-col md:items-end">
+                <div class="flex flex-col items-end">
                     <h3 class="font-semibold text-md">Enlaces:</h3>
                     <div class="flex gap-2 items-start justify-center">
                         <a href={repo} target="_blank" class="float-left">{IconsSet.GithubIcon && <IconsSet.GithubIcon size={40} color={IconsSet.GithubColor}  />}</a>
