@@ -1,15 +1,66 @@
 ---
 import Layout from "../components/Layout.astro";
 ---
+
 <Layout pageTitle="Contacto" pageDescription="Página de contacto" color="black">
-    <section class="w-full h-72 bg-opacity-20 bg-grey bg-center" style="background-image: url('https://loopgk.com/wp-content/uploads/2021/02/lenguaje-min.jpg'); clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);">
-        <div class="w-full h-full flex justify-center items-center bg-semi-black bg-opacity-60">
+    <section
+        class="w-full h-72 bg-opacity-20 bg-grey bg-center"
+        style="background-image: url('https://loopgk.com/wp-content/uploads/2021/02/lenguaje-min.jpg'); clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);"
+    >
+        <div
+            class="w-full h-full flex justify-center items-center bg-semi-black bg-opacity-60"
+        >
             <h2 class="text-5xl md:text-7xl font-bold">CONTACTO</h2>
         </div>
     </section>
-    <form action="" class="w-2/5 h-96 border-2">
-        <h2 class="text-center text-4xl uppercase font-bold text-semi-black">¡Escribeme!</h2>
-        <input type="text" placeholder="" name="Nombre y Apellido" class="w-full border-2 mt-3 h-10 border-semi-black">
-        <input type="text" name="Email" class="w-full border-2">
-    </form>     
+    <section class="w-full md:w-3/5 xl:w-3/6 text-semi-black my-10 px-5">
+        <h2 class="text-center text-3xl uppercase font-bold">
+            ¡Escribeme! Hagamos tu proyecto realidad
+        </h2>
+        <form action="" class="w-full my-5" id="form">
+            <div class="w-full flex flex-col md:flex-row gap-3">
+                <div class="w-full md:w-1/2 flex flex-col">
+                    <label for="" class="text-md font-medium"
+                        >Nombre y Apellido</label
+                    >
+                    <input
+                        type="text"
+                        name="nombre"
+                        class="w-full border h-10 border-semi-black"
+                    />
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col">
+                    <label for="" class="text-md font-medium">Email</label>
+                    <input
+                        type="text"
+                        name="mail"
+                        class="w-full border h-10 border-semi-black"
+                    />
+                </div>
+            </div>
+            <div class="mt-5">
+                <label for="" class="text-md font-medium"
+                    >Mensaje/Motivo de Consulta</label
+                >
+                <textarea name="mail" class="w-full border h-60 resize-none"
+                ></textarea>
+            </div>
+            <button type="submit" class="w-full h-10 mt-2 bg-semi-black text-white hover:bg-white hover:text-semi-black transition hover:border">Enviar Consulta</button>
+        </form>
+        <hr class="w-20 border m-auto" />
+    </section>
 </Layout>
+<script>
+    document.getElementById("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const formData = new FormData(this);
+
+        const nombre = formData.get("nombre");
+        const consulta = formData.get("consulta");
+        const mail = formData.get("email");
+
+        const message = `¡Hola! Mi nombre es ${nombre}, me comunico desde tu página web, el motivo de mi consulta es: ${consulta}. Mi email es ${mail} ¡Espero su respuesta!`;
+        const phoneNumber = "543804800454";
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`);
+    });
+</script>
