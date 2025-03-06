@@ -12,20 +12,12 @@ const {title, color} = Astro.props
         <div class="flex justify-start absolute md:static items-start font-semibold font-poppins">
             <h2 class="text-2xl md:my-5 md:mx-20">Ignacio J. Pantoja</h2>
         </div>
-        <div
-            id="banner-text-bottom"
-            class="md:h-1/2 flex justify-start items-start md:text-semi-black font-poppins"
-        >
+        <div id="banner-text-bottom" class="md:h-1/2 flex justify-start items-start md:text-semi-black font-poppins">
             <h4 class="font-normal mt-20 md:mt-0 md:my-2 md:mx-20 text-center">{title}</h4>
         </div>
-        </div>
-        <div
-            id="profile"
-            style="background-image: url(/assets/nacho.webp);"
-            class="w-full h-full absolute bg-fixed md:bg-local md:static md:w-[45%] md:h-[650px] bg-opacity-15 bg-center bg-cover"
-        >
-        <div class={`${color === "black" ? 'bg-semi-black' : "bg-purple-main"} w-full h-full bg-cover bg-opacity-40 absolute md:hidden`}></div>
     </div>
+    <div id="profile" style="background-image: url(/assets/nacho.webp);" class="w-full h-full absolute bg-fixed md:bg-local md:static md:w-[45%] md:h-[650px] bg-opacity-15 bg-center bg-cover"></div>
+    <div class={`${color === "black" ? 'bg-semi-black' : "bg-purple-main"} w-full h-full bg-cover bg-opacity-40 absolute md:hidden`}></div>
 </section>
 <style>
 
