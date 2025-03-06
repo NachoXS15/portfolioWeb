@@ -16,7 +16,7 @@ const {title, color} = Astro.props
             <h4 class="font-normal mt-20 md:mt-0 md:my-2 md:mx-20 text-center">{title}</h4>
         </div>
     </div>
-    <div id="profile" style="background-image: url(/assets/nacho.webp);" class="w-full h-full absolute bg-fixed md:bg-local md:static md:w-[45%] md:h-[650px] bg-opacity-15 bg-center bg-cover"></div>
+    <div id="profile" style="background-image: url(/assets/nacho.webp);" class="w-full h-full absolute bg-local md:static md:w-[45%] md:h-[650px] bg-opacity-15 bg-center bg-cover"></div>
     <div class={`${color === "black" ? 'bg-semi-black' : "bg-purple-main"} w-full h-full bg-cover bg-opacity-40 absolute md:hidden`}></div>
 </section>
 <style>
