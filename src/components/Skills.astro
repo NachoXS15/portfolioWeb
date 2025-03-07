@@ -1,6 +1,6 @@
 ---
 import * as Icons from '../config/Icons'
-import { DNI, MapPin, Mail, Phone, Balloon } from "./ui/sgvs"
+import { DNI, MapPin, Mail, Phone, Balloon, Lenguage } from "./ui/sgvs"
 
 interface Props{
     profile: string
@@ -38,6 +38,10 @@ const {profile} = Astro.props
                 <div class="flex items-center gap-2">
                     <Phone />
                     <span class="text-md">+54 9 3804-800454</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <Lenguage />
+                    <span class="text-md">Español Nativo, Inglés B2</span>
                 </div>
 
             </div>
