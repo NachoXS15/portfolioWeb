@@ -25,6 +25,7 @@ export type DevIcon =
     | 'adobexd'
     | 'illustrator'
     | 'postgresql'
+    | 'nextjs' 
 
 const Icons: {[key in DevIcon]: IconType } = {
     'astro': SI.SiAstro,
@@ -48,7 +49,8 @@ const Icons: {[key in DevIcon]: IconType } = {
     "figma": SI.SiFigma,
     "adobexd": SI.SiAdobexd,
     "illustrator": SI.SiAdobeillustrator,
-    "postgresql": SI.SiPostgresql
+    "postgresql": SI.SiPostgresql,
+    "nextjs": SI.SiNextdotjs
 }
 
 const IconsColors: {[key in DevIcon]: string} = {
@@ -73,7 +75,8 @@ const IconsColors: {[key in DevIcon]: string} = {
     "figma": "default",
     "adobexd": "#68004e",
     "illustrator": "#ff9a00",
-    "postgresql": "#31638c"
+    "postgresql": "#31638c",
+    "nextjs": "#000"
 }
 
 

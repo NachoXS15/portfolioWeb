@@ -40,3 +40,5 @@ export const PostgreIcon = Icons["postgresql"]
 export const PostgreColor = IconsColors["postgresql"]
 export const GithubIcon = Icons["github"];
 export const GithubColor = IconsColors["github"]
+export const NextjsIcon = Icons["nextjs"];
+export const NextjsColor = IconsColors["nextjs"]
