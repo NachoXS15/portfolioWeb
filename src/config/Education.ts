@@ -9,11 +9,12 @@ type EducationProps = {
 
 const education: EducationProps[] = [
     {
-        title: 'Diseño y Producción Multimedial',
+        title: 'Lic. Diseño y Producción Multimedial',
         institute: "Universidad Nacional de La Rioja",
         since: "2020 - actualidad",
         grade: "Universitario",
-        ongoing: true
+        ongoing: true,
+        degree: "https://drive.google.com/file/d/1LpHy8xn9yUdXWqgmpKQqwTq1yPInFQFJ/view?usp=sharing"
     },
     {
         title: 'MERN Stack',
