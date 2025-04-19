@@ -43,7 +43,7 @@ const { color } = Astro.props;
     </button>
 </nav>
 
-<div class={`hidden md:hidden w-full ${color === "black" ? 'bg-semi-black' : "bg-purple-main "} absolute top-20 z-50`} id="menu-open">
+<div class={`hidden md:hidden z-50 w-full ${color === "black" ? 'bg-semi-black' : "bg-purple-main "} absolute top-20 z-50`} id="menu-open">
     <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
         <nav class="w-full flex flex-col gap-4 p-5 font-medium">
             <a class="font-medium active:scale-110 transition" href="/">INFORMACIÓN</a>
