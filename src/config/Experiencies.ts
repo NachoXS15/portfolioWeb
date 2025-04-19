@@ -19,27 +19,27 @@ const experiences: ExperienceProps[]  = [
     {
         "cliente": "Organización y Desarrollo",
         "rol": "Diseñador Multimedial y Desarrollador Web",
-        "since": "2024",
+        "since": "2024 - 2025",
         "actual": true,
         "desc": "Mis actividades consiste en desarrollar propuestas estéticas para diversas marcas y empresas, otorgando originalidad a la vez que calidad en todas mis tareas. A su vez, he desarrollado una landing page con el objetivo de mostrar y difundir sus objetivos y proyectos.",
         "web": "https://www.instagram.com/organizacionydesarrollo/",
         "time": "Part-Time"
     },
     {
-        "cliente": "TravelGit",
-        "rol": "Diseñador Multimedial y Desarrollador Web",
-        "since": "2024",
+        "cliente": "Iarena Café",
+        "rol": "Diseñador Multimedial",
+        "since": "2024 - 2025",
         "actual": true,
-        "desc": "Mi actividad consiste en desarrollar contenido multimedial y viral para la marca.",
-        "web": "https://www.instagram.com/lecoffee.lr/",
+        "desc": "Mis actividades consiste en desarrollar contenido multimedial y mantenimiento de sus redes sociales, imagen e identidad de la marca.",
+        "web": "https://www.instagram.com/iarenacafe/",
         "time": "Part-Time"
     },
     {
         "cliente": "LeCoffee",
         "rol": "Diseñador Multimedial",
-        "since": "2024-2025",
+        "since": "2025",
         "actual": true,
-        "desc": "Creación de contenido audiovisual para redes sociales.",
+        "desc": "Mi actividad consiste en desarrollar contenido multimedial y viral para la marca.",
         "web": "https://www.instagram.com/lecoffee.lr/",
         "time": "Part-Time"
     },
