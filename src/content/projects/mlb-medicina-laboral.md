@@ -1,7 +1,7 @@
 ---
 title: "MLB - Medicina Laboral"
 desc: "Landing Page y Sistema de Archivos por Usuario"
-link: "https://mlb-medicina-laboral-zeta.vercel.app/"
+link: "https://www.mlb-medicinalaboral.com.ar/"
 repo: "https://github.com/NachoXS15/mlb-medicina-laboral"
 framework: "nextjs"
 lenguage: "TypeScript"
