@@ -9,8 +9,7 @@ const projects = await getCollection("projects");
 
 <Layout pageTitle="Proyectos" pageDescription="Proyectos creados por Ignacio Pantoja" color="black">
     <main class="w-full m-auto">
-        <section class="w-full h-72 bg-opacity-20 bg-grey bg-center"
-    style="background-image: url('https://loopgk.com/wp-content/uploads/2021/02/lenguaje-min.jpg'); clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);">
+        <section class="w-full h-72 bg-opacity-20 bg-grey bg-center" style="background-image: url('https://loopgk.com/wp-content/uploads/2021/02/lenguaje-min.jpg'); clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);">
             <div class="w-full h-full flex justify-center items-center bg-semi-black bg-opacity-60">
                 <h2 class="text-5xl md:text-7xl font-bold">PROYECTOS</h2>
             </div>
@@ -19,7 +18,7 @@ const projects = await getCollection("projects");
            
                 {
                     projects
-                    .sort((a, b) => a.data.title.localeCompare(b.data.title)) // ← orden alfabético
+                    .sort((a, b) => a.data.title.localeCompare(b.data.title))
                     .map(project => {
                         const {data, slug} = project
                         const {title, desc, img, starred} = data
