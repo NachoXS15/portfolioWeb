@@ -7,6 +7,7 @@ framework: "Astro"
 lenguage: "TypeScript"
 styled: "tailwind"
 img: "nueva-era.png"
+starred: false
 ---
 
 Página web realizada para la agencia NuevaEra, con el objetivo de dar a conocer sus servicios, sus valores, su equipo de trabajo y sus medios de comunicación.

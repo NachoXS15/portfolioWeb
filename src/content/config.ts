@@ -5,6 +5,7 @@ const projects = defineCollection({
         title: z.string(),
         lenguage: z.string(),
         desc: z.string(),
+        starred: z.boolean(),
         framework: z.string().optional(),
         link: z.string().url(),
         repo: z.string().url(),

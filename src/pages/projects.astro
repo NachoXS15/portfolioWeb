@@ -20,14 +20,15 @@ const projects = await getCollection("projects");
                 {
                     projects.map(project => {
                         const {data, slug} = project
-                        const {title, desc, img} = data
+                        const {title, desc, img, starred} = data
                         
                         return(
                             <ProjectCard 
-                            title={title}
-                            desc={desc}
-                            img={img} 
-                            sLink={slug}
+                                title={title}
+                                desc={desc}
+                                img={img} 
+                                sLink={slug}
+                                starred={starred}
                             />
                         )
                     })
