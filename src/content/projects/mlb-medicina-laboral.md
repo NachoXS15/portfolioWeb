@@ -7,7 +7,7 @@ framework: "nextjs"
 lenguage: "TypeScript"
 styled: "Tailwind"
 img: "mlb.webp"
-starred: false
+starred: true
 ---
 
 Primer proyecto colaborativo con **[Lucas Paz](https://github.com/LucasP86)**.
