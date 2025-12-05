@@ -17,6 +17,14 @@ const education: EducationProps[] = [
         degree: "https://drive.google.com/file/d/1LpHy8xn9yUdXWqgmpKQqwTq1yPInFQFJ/view?usp=sharing"
     },
     {
+        title: 'Introducción a la Ciberseguridad',
+        institute: "Educacion IT",
+        since: "2025",
+        grade: "Curso",
+        ongoing: false,
+        degree: "https://drive.google.com/file/d/1fs7J5gvivAOo7O1CLAxgpyyIZPL3FNPj/view?usp=sharing"
+    },
+    {
         title: 'MERN Stack',
         institute: "Polo Tecnológico",
         since: "2023",
