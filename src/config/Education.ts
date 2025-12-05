@@ -22,7 +22,7 @@ const education: EducationProps[] = [
         since: "2025",
         grade: "Curso",
         ongoing: false,
-        degree: "https://drive.google.com/file/d/1fs7J5gvivAOo7O1CLAxgpyyIZPL3FNPj/view?usp=sharing"
+        degree: "https://drive.google.com/file/d/1Q8ajFwyLI8-H2CqlIrjDFuT1YnEnDQeF/view?usp=sharing"
     },
     {
         title: 'MERN Stack',
