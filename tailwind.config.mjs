@@ -6,7 +6,7 @@ export default {
 	theme: {
 		colors: {
 			'purple-main': '#280733',
-			'purple-second': '#280733',
+			'purple-second': '#0b0924',
 			'grey': "#919191",
 			"semi-black": "#131111",
 			"white": "#fff",

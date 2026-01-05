@@ -20,12 +20,16 @@ export type DevIcon =
     | 'sql'
     | 'express'
     | 'sass'
-    | 'vscode'
+    | 'arch'
     | 'figma'
     | 'adobexd'
     | 'illustrator'
     | 'postgresql'
-    | 'nextjs' 
+    | 'nextjs'
+    | 'photoshop'
+    | 'premiere'
+    | 'audition'
+    | 'lightroom'
 
 const Icons: {[key in DevIcon]: IconType } = {
     'astro': SI.SiAstro,
@@ -45,12 +49,17 @@ const Icons: {[key in DevIcon]: IconType } = {
     "sql": SI.SiMysql,
     "express": SI.SiExpress,
     "sass": SI.SiSass,
-    "vscode": SI.SiVisualstudiocode,
+    "arch": SI.SiArchlinux,
     "figma": SI.SiFigma,
     "adobexd": SI.SiAdobexd,
     "illustrator": SI.SiAdobeillustrator,
     "postgresql": SI.SiPostgresql,
-    "nextjs": SI.SiNextdotjs
+    "nextjs": SI.SiNextdotjs,
+    // "capcut" : SI.SiCapcut,
+    "photoshop": SI.SiAdobephotoshop,
+    "audition": SI.SiAdobeaudition,
+    "lightroom": SI.SiAdobelightroomclassic,
+    "premiere": SI.SiAdobepremierepro
 }
 
 const IconsColors: {[key in DevIcon]: string} = {
@@ -71,12 +80,16 @@ const IconsColors: {[key in DevIcon]: string} = {
     "sql": "#ffffff",
     "express": '#ffffff',
     "sass": "#ff89c4",
-    "vscode": "#2dabdd",
+    "arch": "#3ebff8",
     "figma": "default",
     "adobexd": "#68004e",
     "illustrator": "#ff9a00",
     "postgresql": "#31638c",
-    "nextjs": "#000"
+    "nextjs": "#000",
+    "premiere": "ffffff",
+    "lightroom": "#ffffff",
+    "audition": "ffffff",
+    "photoshop": "#ffffff"
 }
 
 

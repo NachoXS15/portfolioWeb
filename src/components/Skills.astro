@@ -8,7 +8,6 @@ interface Props{
 
 const {profile} = Astro.props
 ---
-
 <section class={`w-full h-fit py-10 flex flex-col px-5 justify-center items-center ${profile == "editor" ? 'bg-purple-main' : 'bg-semi-black'}`}>
     <div class="w-full xl:w-4/5 flex flex-col md:flex-row items-start justify-center">
         <div class="w-full md:w-1/2 px-5 md:px-14 lg:px-7">
@@ -35,10 +34,10 @@ const {profile} = Astro.props
                     <Mail />
                     <span class="text-md">pantojaignacio642@gmail.com</span>
                 </div>
-                <div class="flex items-center gap-2">
+                <!-- <div class="flex items-center gap-2">
                     <Phone />
                     <span class="text-md">+54 9 3804-800454</span>
-                </div>
+                </div> -->
                 <div class="flex items-center gap-2">
                     <Lenguage />
                     <span class="text-md">Español Nativo, Inglés B2</span>
@@ -51,8 +50,48 @@ const {profile} = Astro.props
         <div class="w-full md:w-1/2 flex items-center xl:items-start px-5 md:px-14 lg:px-7 flex-col">
             <h2 class="font-bold text-4xl mb-2 self-start">Habilidades</h2>
             <hr class="w-20 self-start border-2 mb-8" />
-
-            <div class="w-full lg:w-4/5 md:px-5">
+            {profile == "editor" ? (
+                <div class="w-full lg:w-4/5 md:px-5">
+                <div class="mb-8">
+                    <h2 class="text-2xl">Herramientas</h2>
+                    <div class="text-base mt-2 flex flex-wrap gap-4">
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.PhotoshopIcon && <Icons.PhotoshopIcon size={50} color={Icons.PhotoshopColor} />}</span>
+                            <p>Photoshop</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.AdobeXDIcon && <Icons.AdobeXDIcon size={50} color={Icons.AdobeXDColor}  />}</span>
+                            <p class="text-center">Adobe XD</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.IllustratorIcon && <Icons.IllustratorIcon size={50} color={Icons.IllustratorColor}  />}</span>
+                            <p class="text-center">Illustrator</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.PremiereIcon && <Icons.PremiereIcon size={50} color={Icons.PremiereColor}  />}</span>
+                            <p class="text-center">Premiere</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.AuditionIcon && <Icons.AuditionIcon size={50} color={Icons.AuditionColor}  />}</span>
+                            <p class="text-center">Audition</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.LightroomIcon && <Icons.LightroomIcon size={50} color={Icons.LightroomColor}  />}</span>
+                            <p class="text-center">Lightroom</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.NotionIcon && <Icons.NotionIcon size={50} color={Icons.NotionColor}  />}</span>
+                            <p>Notion</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <span>{Icons.FigmaIcon && <Icons.FigmaIcon size={50} color={Icons.FigmaColor}  />}</span>
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ) : (
+                <div class="w-full lg:w-4/5 md:px-5">
                 <div class="mb-8">
                     <h2 class="text-2xl">Lenguajes</h2>
                     <div class="text-base mt-2 flex flex-wrap gap-4">
@@ -127,8 +166,8 @@ const {profile} = Astro.props
                             <p>Git</p>
                         </div>
                         <div class="flex items-center flex-col">
-                            <span>{Icons.VSCIcon && <Icons.VSCIcon size={50} color={Icons.VSCColor}  />}</span>
-                            <p>VSC</p>
+                            <span>{Icons.ArchIcon && <Icons.ArchIcon size={50} color={Icons.ArchColor}  />}</span>
+                            <p>Arch Linux</p>
                         </div>
                         <div class="flex items-center flex-col">
                             <span>{Icons.NotionIcon && <Icons.NotionIcon size={50} color={Icons.NotionColor}  />}</span>
@@ -149,6 +188,8 @@ const {profile} = Astro.props
                     </div>
                 </div>
             </div>
+            )}
+            
         </div>
     </div>
 </section>
