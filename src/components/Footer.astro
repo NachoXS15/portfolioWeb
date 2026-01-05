@@ -12,15 +12,17 @@ const TailwindColor = IconsColors["cyan"]
 
 type Props = {
     color: string
+    profile: string
 }
 
-const {color} = Astro.props
+const {color, profile} = Astro.props
 ---
 <footer class={`w-full h-fit pt-10 md:pt-14 flex flex-col justify-around gap-14 ${color === "black" ? 'bg-semi-black' : "bg-purple-main "}`}>
     <div class="w-full flex justify-around flex-col md:flex-row items-center gap-5 md:gap-10">
         <div class="pl-4 h-fit text-center md:text-start md:border-l-4">
             <h3 class="text-xl font-bold">Ignacio Joaquín Pantoja</h3>
-            <p>La Rioja, Argentina</p>
+            <p class="mb-3">La Rioja, Argentina</p>
+            {profile == "dev" ? <a href="/videoeditor" class="hover:underline">Perfil de Diseñador</a> : <a href="/" class="hover:underline">Perfil de Desarrolador</a>}
         </div>
         <hr class="w-3/5 inline border-white border md:hidden">
         <div class="flex flex-col items-center gap-2 md:items-start">

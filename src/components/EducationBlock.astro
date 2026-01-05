@@ -1,6 +1,10 @@
 ---
-import education from "../config/Education";
+
+import { education, educationVideo } from "../config/Education";
 import { Link } from "./ui/sgvs";
+
+const {profile} = Astro.props
+const profileSelected = profile === "dev" ? education : educationVideo
 ---
 
 <section class="w-full md:w-1/2 md:px-14 lg:px-7 h-fit flex flex-col items-center">
@@ -9,7 +13,7 @@ import { Link } from "./ui/sgvs";
 
     <ol class="w-full md:w-full lg:w-4/5 relative border-s border-gray-200 text-start dark:border-gray-700">                  
         {
-            education.map(edu => (
+            profileSelected.map(edu => (
                 <li class="mb-10 ms-6">            
                     <span class="absolute flex items-center justify-center w-6 h-6 border-2 rounded-full -start-3">
                         <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">

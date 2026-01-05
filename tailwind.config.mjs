@@ -5,8 +5,8 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		colors: {
-			'purple-main': '#242034',
-			'purple-second': '#d4d0e9',
+			'purple-main': '#280733',
+			'purple-second': '#280733',
 			'grey': "#919191",
 			"semi-black": "#131111",
 			"white": "#fff",

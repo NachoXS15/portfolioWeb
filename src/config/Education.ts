@@ -65,4 +65,30 @@ const education: EducationProps[] = [
     },
 ]
 
-export default education
+const educationVideo: EducationProps[] = [
+    {
+        title: 'Lic. Diseño y Producción Multimedial',
+        institute: "Universidad Nacional de La Rioja",
+        since: "2020 - actualidad",
+        grade: "Universitario",
+        ongoing: true,
+        degree: "https://drive.google.com/file/d/1LpHy8xn9yUdXWqgmpKQqwTq1yPInFQFJ/view?usp=sharing"
+    },
+    {
+        title: 'Diseño Gráfico Digital',
+        institute: "Universidad Tecnológica Nacional",
+        since: "2022",
+        grade: "Curso",
+        ongoing: false,
+        degree: "https://drive.google.com/file/d/15sVOEqpnHJbVrg3tENhFEGd015hdlf-h/view?usp=sharing"
+    },
+    {
+        title: 'Formación Secundaria Completa',
+        institute: "Colegio San Francisco de Asis - La Rioja",
+        since: "Promoción 2019",
+        grade: "Secundario",
+        ongoing: false
+    },
+]
+
+export {education, educationVideo}

@@ -4,11 +4,11 @@ import { CiGlobe } from "react-icons/ci";
 import Starred from "../ui/Starred.astro";
 
 interface Props {
-    title: string;
-    desc: string;
-    img: string;
-    sLink: string
-    starred: boolean
+    title?: string;
+    desc?: string;
+    img?: string;
+    sLink?: string
+    starred?: boolean
 }
 
 const { title, desc, img, sLink, starred} = Astro.props;
