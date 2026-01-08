@@ -1,10 +1,10 @@
 ---
 import type { GetStaticPaths } from "astro";
-import Layout from '../../components/Layout.astro'
-import { Link } from '../../components/ui/sgvs'
-import * as IconsSet from '../../config/Icons'
+import Layout from '../../../components/Layout.astro'
+import { Link } from '../../../components/ui/sgvs'
+import * as IconsSet from '../../../config/Icons'
 import { getCollection, render } from "astro:content";
-import {Icons, IconsColors} from '../../config/IconsSet'
+import {Icons, IconsColors} from '../../../config/IconsSet'
 import type { IconType } from "react-icons";
 
 export async function getStaticPaths() {
@@ -43,7 +43,7 @@ if (styled) {
 }
 
 ---
-<Layout pageTitle={`${title} - Portfolio`} pageDescription='anashe' color='black' profile="dev">
+<Layout pageTitle={`${title} - Portfolio`} pageDescription='anashe' color='black' profile="editor">
     <main class="w-full px-5 md:w-4/5 xl:w-3/5 grid grid-cols-1 place-items-center text-semi-black my-10">
         <div class="w-full h-fit rounded-md bg-contain bg-no-repeat bg-center">
             <img src={`/assets/projects/${img}`} class="rounded-lg" alt="">

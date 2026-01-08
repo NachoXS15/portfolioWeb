@@ -22,7 +22,7 @@ const { pageTitle, pageDescription, color, profile } = Astro.props;
         <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
     </head>
     <body class="w-full min-h-screen flex flex-col justify-between items-center scroll-smooth">
-        <Header color={color} />
+        <Header color={color} profile={profile} />
             <slot />
         <Footer profile={profile} color={color} />
     </body>

@@ -19,7 +19,9 @@ const projectsEditor = defineCollection({
         title: z.string(),
         desc: z.string(),
         link: z.string(),
-        img: z.string()
+        img: z.string(),
+        starred: z.boolean(),
+        brief: z.string()
     })
 })
 
