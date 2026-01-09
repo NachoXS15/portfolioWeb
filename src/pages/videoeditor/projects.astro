@@ -1,11 +1,9 @@
 ---
-import Header from "../../components/Header.astro";
 import Layout from "../../components/Layout.astro";
 import ProjectCard from "../../components/projectsComp/ProjectCard.astro";
 import { getCollection } from "astro:content";
 
 const projectsEditor = await getCollection("projectsEditor");
-
 ---
 
 <Layout pageTitle="Proyectos" pageDescription="Proyectos creados por Ignacio Pantoja" color="purple" profile="editor">
@@ -21,7 +19,7 @@ const projectsEditor = await getCollection("projectsEditor");
                     .sort((a, b) => a.data.title.localeCompare(b.data.title))
                     .map(project => {
                         const {data, slug} = project
-                        const {title, desc, img} = data
+                        const {title, desc, img, starred, profile} = data
                         
                         return(
                             <ProjectCard 
@@ -29,6 +27,8 @@ const projectsEditor = await getCollection("projectsEditor");
                                 desc={desc}
                                 img={img} 
                                 sLink={slug}
+                                profile={profile}
+                                starred={starred}
                             />
                         )
                     })

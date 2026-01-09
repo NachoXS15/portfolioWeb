@@ -7,6 +7,7 @@ framework: "nextjs"
 lenguage: "Typescript"
 styled: "tailwind"
 img: "hive.png"
+profile: "dev"
 starred: true
 ---
 

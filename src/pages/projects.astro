@@ -1,5 +1,4 @@
 ---
-import Header from "../components/Header.astro";
 import Layout from "../components/Layout.astro";
 import ProjectCard from "../components/projectsComp/ProjectCard.astro";
 import { getCollection } from "astro:content";
@@ -20,7 +19,7 @@ const projects = await getCollection("projects");
                     .sort((a, b) => a.data.title.localeCompare(b.data.title))
                     .map(project => {
                         const {data, slug} = project
-                        const {title, desc, img, starred} = data
+                        const {title, desc, img, starred, profile} = data
                         
                         return(
                             <ProjectCard 
@@ -29,6 +28,7 @@ const projects = await getCollection("projects");
                                 img={img} 
                                 sLink={slug}
                                 starred={starred}
+                                profile={profile}
                             />
                         )
                     })

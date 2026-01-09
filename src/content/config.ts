@@ -10,18 +10,20 @@ const projects = defineCollection({
         link: z.string().url(),
         repo: z.string().url(),
         styled: z.string().optional(),
-        img: z.string()
+        img: z.string(),
+        profile: z.string()
     })
 })
 
 const projectsEditor = defineCollection({
     schema: z.object({
         title: z.string(),
+        brief: z.string(),
         desc: z.string(),
         link: z.string(),
         img: z.string(),
         starred: z.boolean(),
-        brief: z.string()
+        profile: z.string()
     })
 })
 

@@ -8,5 +8,6 @@ lenguage: "TypeScript"
 styled: "Tailwind"
 img: "sistema.webp"
 starred: true
+profile: "dev"
 ---
 Proyecto personal comenzado en 2022, el cual abandone por enfocarme en otros proyectos. Recientenemte retomé la idea para poder poder practicar Next.js, framework en el que trabajaré en mi tesis, por lo que este proyecto es para testearlo. Actualmente lo uso como mi sistema para registrar clientes de servicio técnico de computadora, registro de alumnos, trabajos variados, etc. Cuenta con autenticación y CRUD. Es de mis proyectos más completos.

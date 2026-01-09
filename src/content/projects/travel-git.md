@@ -8,6 +8,7 @@ lenguage: "Typescript"
 styled: "tailwind"
 img: "travelgit.jpg"
 starred: true
+profile: "dev"
 ---
 Página Web desarrollada para la agencia de viajes TravelGIT, con el objetivo de dar a conocer sus **paquetes de viajes y su respectiva información**, ofrecer un medio de comunicación para los viajeros, y brindar una atención personalizada a través de ellos, mostrando postales que estos envian junto con sus testimonios de viaje.
 Cuenta con un **sistema de administración** mediante **usuarios** registrados para el manejo de la información de los paquetes de viajes mostrados al público.

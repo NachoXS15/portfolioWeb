@@ -7,6 +7,7 @@ framework: "nextjs"
 lenguage: "TypeScript"
 styled: "Tailwind"
 img: "mlb.webp"
+profile: "dev"
 starred: true
 ---
 
