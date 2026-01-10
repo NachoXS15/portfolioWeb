@@ -60,10 +60,6 @@ const {profile} = Astro.props
                             <p>Photoshop</p>
                         </div>
                         <div class="flex items-center flex-col">
-                            <span>{Icons.AdobeXDIcon && <Icons.AdobeXDIcon size={50} color={Icons.AdobeXDColor}  />}</span>
-                            <p class="text-center">Adobe XD</p>
-                        </div>
-                        <div class="flex items-center flex-col">
                             <span>{Icons.IllustratorIcon && <Icons.IllustratorIcon size={50} color={Icons.IllustratorColor}  />}</span>
                             <p class="text-center">Illustrator</p>
                         </div>
@@ -80,12 +76,20 @@ const {profile} = Astro.props
                             <p class="text-center">Lightroom</p>
                         </div>
                         <div class="flex items-center flex-col">
+                            <span>{Icons.AdobeXDIcon && <Icons.AdobeXDIcon size={50} color={Icons.AdobeXDColor}  />}</span>
+                            <p class="text-center">Adobe XD</p>
+                        </div>
+                        <div class="flex items-center flex-col">
                             <span>{Icons.NotionIcon && <Icons.NotionIcon size={50} color={Icons.NotionColor}  />}</span>
                             <p>Notion</p>
                         </div>
                         <div class="flex items-center flex-col">
                             <span>{Icons.FigmaIcon && <Icons.FigmaIcon size={50} color={Icons.FigmaColor}  />}</span>
                             <p>Figma</p>
+                        </div>
+                        <div class="flex items-center flex-col">
+                            <img src="/assets/capcut.png" width="50" alt="">
+                            <p>Capcut</p>
                         </div>
                     </div>
                 </div>
