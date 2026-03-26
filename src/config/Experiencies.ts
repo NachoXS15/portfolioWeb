@@ -11,10 +11,25 @@ type ExperienceProps = {
 
 const experiences: ExperienceProps[]  = [
     {
+        "cliente": "BandS",
+        "since": "2026",
+        "actual": true,
+        "desc": "Desarrollo de Software Full-Stack para páginas, aplicaciones y sistemas web en equipos medianos. Planificación, diseño y creación de productos digitales con diferntes escalas.",
+        "time": "Full-Time"
+    },
+    {
         "cliente": "Desarrollador Freelance",
         "since": "2021 - 2026",
         "actual": true,
         "desc": "Planificación, diseño y desarrollo de páginas y aplicaciones web, en base a los requerimientos de diversos clientes, sean particulares, o pequeñas o medianas empresas."
+    },
+    {
+        "cliente": "UNLAR",
+        "rol": "Ayudante de Cátedra",
+        "since": "marzo 2022 - 2026",
+        "actual": true,
+        "desc": "Mi rol es poder asistir al docente en tareas como otorgar tutorías y estar en constante contacto con los alumnos, manejo de recurso humano dentro del equipo de catedra, mantiendo una afinidad con los estudiantes y realizar un constante seguimiento de los proyectos de estos. En estas cátedras abarcamos HTML, CSS, JavaScript, PHP, MySQL y Git.",
+        "time": "Part-Time"
     },
     {
         "cliente": "Organización y Desarrollo",
@@ -23,14 +38,6 @@ const experiences: ExperienceProps[]  = [
         "actual": true,
         "desc": "Mis actividades consiste en desarrollar propuestas estéticas para diversas marcas y empresas, otorgando originalidad a la vez que calidad en todas mis tareas. A su vez, he desarrollado una landing page con el objetivo de mostrar y difundir sus objetivos y proyectos.",
         "web": "https://www.instagram.com/organizacionydesarrollo/",
-        "time": "Part-Time"
-    },
-    {
-        "cliente": "UNLAR",
-        "rol": "Ayudante de Cátedra",
-        "since": "marzo 2022 - 2026",
-        "actual": true,
-        "desc": "Mi rol es poder asistir al docente en tareas como otorgar tutorías y estar en constante contacto con los alumnos, manejo de recurso humano dentro del equipo de catedra, mantiendo una afinidad con los estudiantes y realizar un constante seguimiento de los proyectos de estos. En estas cátedras abarcamos HTML, CSS, JavaScript, PHP y MySQL.",
         "time": "Part-Time"
     },
     {
