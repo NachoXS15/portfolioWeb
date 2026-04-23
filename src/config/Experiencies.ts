@@ -11,10 +11,10 @@ type ExperienceProps = {
 
 const experiences: ExperienceProps[]  = [
     {
-        "cliente": "BandS",
+        "cliente": "BandS (Business and Solutions)",
         "since": "2026",
         "actual": true,
-        "desc": "Desarrollo de Software Full-Stack para páginas, aplicaciones y sistemas web en equipos medianos. Planificación, diseño y creación de productos digitales con diferntes escalas.",
+        "desc": "Desarrollo de Software Full-Stack para páginas, aplicaciones y sistemas web en equipos medianos. Planificación, diseño y creación de productos digitales con diferentes escalas.",
         "time": "Full-Time"
     },
     {

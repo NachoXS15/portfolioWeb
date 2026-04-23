@@ -30,6 +30,8 @@ export type DevIcon =
     | 'premiere'
     | 'audition'
     | 'lightroom'
+    | 'python'
+    | 'flask'
 
 const Icons: {[key in DevIcon]: IconType } = {
     'astro': SI.SiAstro,
@@ -59,7 +61,9 @@ const Icons: {[key in DevIcon]: IconType } = {
     "photoshop": SI.SiAdobephotoshop,
     "audition": SI.SiAdobeaudition,
     "lightroom": SI.SiAdobelightroomclassic,
-    "premiere": SI.SiAdobepremierepro
+    "premiere": SI.SiAdobepremierepro,
+    "python": SI.SiPython,
+    "flask": SI.SiFlask
 }
 
 const IconsColors: {[key in DevIcon]: string} = {
@@ -89,7 +93,9 @@ const IconsColors: {[key in DevIcon]: string} = {
     "premiere": "ffffff",
     "lightroom": "#ffffff",
     "audition": "ffffff",
-    "photoshop": "#ffffff"
+    "photoshop": "#ffffff",
+    "python": "#3472a4",
+    "flask": "#44909b"
 }
 
 

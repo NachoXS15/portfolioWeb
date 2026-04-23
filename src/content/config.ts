@@ -7,8 +7,8 @@ const projects = defineCollection({
         desc: z.string(),
         starred: z.boolean(),
         framework: z.string().optional(),
-        link: z.string().url(),
-        repo: z.string().url(),
+        link: z.string().url().optional(),
+        repo: z.string().url().optional(),
         styled: z.string().optional(),
         img: z.string(),
         profile: z.string()

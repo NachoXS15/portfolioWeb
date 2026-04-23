@@ -66,13 +66,14 @@ if (styled) {
                         {styled && (<span class="float-left">{IconStyle && (<IconStyle size={45} color={ColorStyle} />)}</span>)}
                     </div>
                 </div>
+                {repo && link ? (
                 <div class="flex flex-col items-end">
                     <h3 class="font-semibold text-md">Enlaces:</h3>
                     <div class="flex gap-2 items-start justify-center">
                         <a href={repo} target="_blank" class="float-left">{IconsSet.GithubIcon && <IconsSet.GithubIcon size={40} color={IconsSet.GithubColor}  />}</a>
                         <a href={link} target="_blank"><Link size={35} /></a>
                     </div>
-                </div>
+                </div>) : null}
         </div>
     </main>
 </Layout>
