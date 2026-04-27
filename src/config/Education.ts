@@ -17,6 +17,14 @@ const education: EducationProps[] = [
         degree: "https://drive.google.com/file/d/1LpHy8xn9yUdXWqgmpKQqwTq1yPInFQFJ/view?usp=sharing"
     },
     {
+        title: 'Introducción a Redes',
+        institute: "Educacion IT",
+        since: "2026",
+        grade: "Curso",
+        ongoing: false,
+        degree: "https://drive.google.com/file/d/1CKs8BOEO9enqM3aXx4tm8TLl7O6br_rs/view?usp=sharing"
+    },
+    {
         title: 'Introducción a la Ciberseguridad',
         institute: "Educacion IT",
         since: "2025",

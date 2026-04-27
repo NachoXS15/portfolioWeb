@@ -9,7 +9,7 @@ const tgProject = projects.find(
 );
 
 const flProject = projects.find(
-    (project) => project.data.title === "Feria del Libro",
+    (project) => project.data.title === "Hive",
 );
 
 ---
@@ -26,6 +26,7 @@ const flProject = projects.find(
                     sLink={tgProject.slug}
                     img={tgProject.data.img}
                     starred={tgProject.data.starred}
+                    profile="dev"
                 />
             )
         }
@@ -37,6 +38,7 @@ const flProject = projects.find(
                     sLink={flProject.slug}
                     img={flProject.data.img}
                     starred={flProject.data.starred}
+                    profile="dev"
                 />
             )
         }

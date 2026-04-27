@@ -14,7 +14,7 @@ const {profile, color} = Astro.props
         <section class="w-full flex flex-col md:flex-row items-start justify-center h-fit">
             <ExperiencesBlock profile={profile} />
             <hr class="block md:hidden w-20 m-auto text-center border-2 my-5" />
-            <EducationBlock />
+            <EducationBlock profile={profile} />
         </section>
     </section>
     

@@ -63,7 +63,7 @@ const Icons: {[key in DevIcon]: IconType } = {
     "lightroom": SI.SiAdobelightroomclassic,
     "premiere": SI.SiAdobepremierepro,
     "python": SI.SiPython,
-    "flask": SI.SiFlask
+    "flask": SI.SiFlask,
 }
 
 const IconsColors: {[key in DevIcon]: string} = {
