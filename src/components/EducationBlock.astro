@@ -8,7 +8,7 @@ const profileSelected = profile === "dev" ? education : educationVideo
 ---
 
 <section class="w-full md:w-1/2 md:px-14 lg:px-7 h-fit flex flex-col items-center">
-    <h2 class="font-bold text-4xl mt-10 mb-2 self-start">Estudios</h2>
+    <h2 class="font-bold text-3xl md:text-4xl mt-10 mb-2 self-start">Estudios</h2>
     <hr class="w-20 self-start border-2 mb-10" />
 
     <ol class="w-full md:w-full lg:w-4/5 relative border-s border-gray-200 text-start dark:border-gray-700">                  
@@ -22,8 +22,8 @@ const profileSelected = profile === "dev" ? education : educationVideo
                     </span>
                     <h3 class="flex items-center mb-1 text-lg font-semibold">{edu.title}{edu.ongoing && <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded border dark:bg-blue-900 dark:text-blue-300 ms-3">Cursando</span>}</h3>
                     <p class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{edu.institute}</p>
-                    <p class="font-semibold">Año: <span class="font-normal">{edu.since}</span></p>
-                    <p class="font-semibold">Nivel: <span class="font-normal">{edu.grade}</span></p>
+                    <p class="font-semibold text-sm md:text-base">Año: <span class="font-normal">{edu.since}</span></p>
+                    <p class="font-semibold text-sm md:text-base">Nivel: <span class="font-normal">{edu.grade}</span></p>
                     {
                         edu.degree &&
                             <a href={edu.degree} target="_blank" class={`flex items-center gap-2 underline`}>
