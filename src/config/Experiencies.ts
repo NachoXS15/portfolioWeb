@@ -59,6 +59,15 @@ const experiencesVideo: ExperienceProps[]  = [
         "desc": "Planificación, diseño y desarrollo de páginas y aplicaciones web, en base a los requerimientos de diversos clientes, sean particulares, o pequeñas o medianas empresas."
     },
     {
+        "cliente": "La Renovación",
+        "rol": "Diseñador Multimedial",
+        "since": "2024 - 2026",
+        "actual": true,
+        "desc": "Mi rol consiste en desarrollar piezas gráficas y audiovisuales creativas y atractivas para promocionar las diversas actividades de la organización, trabajando en equipo y manteniendo como eje principal lo comunicacional y emocional.",
+        "web": "https://www.instagram.com/larenovacionok/",
+        "time": "Part-Time"
+    },
+    {
         "cliente": "Iarena Café",
         "rol": "Diseñador Multimedial",
         "since": "2024 - 2026",
@@ -71,7 +80,7 @@ const experiencesVideo: ExperienceProps[]  = [
         "cliente": "LeCoffee",
         "rol": "Diseñador Multimedial",
         "since": "2025 - 2026",
-        "actual": true,
+        "actual": false,
         "desc": "Mi actividad consiste en desarrollar contenido multimedial y viral para la marca.",
         "web": "https://www.instagram.com/lecoffee.lr/",
         "time": "Part-Time"

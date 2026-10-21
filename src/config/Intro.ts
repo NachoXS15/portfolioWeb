@@ -5,8 +5,8 @@ const infodev = [
 ]
 const infovideo = [
     "¡Hola buenas! Bienvenido a mi página web, acá te voy a mostrar un poco de mis trabajos, mis experiencias y mis habilidades.",
-    "Actualmente soy tesista en la carrera de Diseño y Producción Multimedial, ejerzo como Editor de Videos Freelance y realizo trabajos part-time para diversas empresas de mi ciudad, siempre disponible y dispuesto a avanzar en diversos desafios y nuevas oportunidades.",
-    "Me he desarrollado como Project Leader en varios equipos de trabajo."
+    "Actualmente soy tesista en la carrera de Diseño y Producción Multimedial, ejerzo como Fotógrafo y Editor de Videos Freelance, realizando trabajos part-time para diversas empresas de mi ciudad. También me he desarrollado como Project Leader en varios equipos de trabajo.",
+    "Siempre disponible y dispuesto a avanzar en diversos desafios y nuevas oportunidades. <3"
 ]
 
 export {infodev, infovideo}

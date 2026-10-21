@@ -1,6 +1,67 @@
-<section class="w-full min-h-fit py-10 flex items-center justify-center flex-col">
-    <h2 class="py-5 font-poppins text-purple-main font-bold text-3xl">Diseños</h2>
-    <div>
+---
+import {Photos} from '../config/Photos'
+---
 
+<section class="w-full min-h-fit py-10 flex items-center justify-center flex-col">
+    <h2 class="py-5 font-poppins text-purple-main font-bold text-3xl">Fotos</h2>
+    <div class="flex flex-row items-center gap-6">
+        <button
+            id="filter-product"
+            data-filter="product"
+            class="filter-btn font-poppins text-purple-main font-bold text-xl cursor-pointer transition hover:scale-110"
+        >
+            Productos
+        </button>
+        <button
+            id="filter-event"
+            data-filter="event"
+            class="filter-btn font-poppins text-purple-main font-bold text-xl cursor-pointer transition hover:scale-110"
+        >
+            Eventos
+        </button>
     </div>
+    <section class="p-5 md:p-10">
+        <div class="gap-2 lg:gap-8 columns-2 lg:columns-3 xl:columns-4">
+            {
+                Photos.map(photo => (
+                    <img data-type={photo.type} src={photo.src} alt="" class="photo-item rounded-md w-full mb-4"/>
+                ))
+            }
+        </div>
+    </section>
 </section>
+
+<style>
+    .filter-btn {
+        opacity: 0.5;
+    }
+
+    .filter-btn.active {
+        opacity: 1;
+        text-decoration: underline;
+    }
+</style>
+
+<script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>(".filter-btn");
+    const photos = document.querySelectorAll<HTMLImageElement>(".photo-item");
+
+    const applyFilter = (filter: string) => {
+        buttons.forEach(button => {
+            button.classList.toggle("active", button.dataset.filter === filter);
+        });
+
+        photos.forEach(photo => {
+            photo.classList.toggle("hidden", photo.dataset.type !== filter);
+        });
+    };
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.dataset.filter ?? "product";
+            applyFilter(filter);
+        });
+    });
+
+    applyFilter("product");
+</script>
