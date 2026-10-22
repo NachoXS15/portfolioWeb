@@ -23,7 +23,7 @@ const flProject = projects.find(
                 <ProjectCard
                     title={tgProject.data.title}
                     desc={tgProject.data.desc}
-                    sLink={tgProject.slug}
+                    sLink={tgProject.id}
                     img={tgProject.data.img}
                     starred={tgProject.data.starred}
                     profile="dev"
@@ -35,7 +35,7 @@ const flProject = projects.find(
                 <ProjectCard
                     title={flProject.data.title}
                     desc={flProject.data.desc}
-                    sLink={flProject.slug}
+                    sLink={flProject.id}
                     img={flProject.data.img}
                     starred={flProject.data.starred}
                     profile="dev"

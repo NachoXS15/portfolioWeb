@@ -11,7 +11,7 @@ export async function getStaticPaths() {
     const projects = await getCollection("projectsEditor")
 
     return projects.map((project) => ({
-        params: { id: project.slug },
+        params: { id: project.id },
         props: { project }
     }))
 }
@@ -52,6 +52,7 @@ const { Content } = await render(project)
                         <a href={link} target="_blank"><Link size={35} /></a>
                     </div>
                 </div>
+            </div>
         </div>
     </main>
 </Layout>

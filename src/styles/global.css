@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@config "../../tailwind.config.mjs";
+
+/* Keep Tailwind v3 preflight behavior for form controls */
+@layer base {
+	input,
+	textarea,
+	select {
+		background-color: #fff;
+	}
+
+	button:not(:disabled),
+	[role="button"]:not(:disabled) {
+		cursor: pointer;
+	}
+}

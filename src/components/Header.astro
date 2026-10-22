@@ -22,7 +22,7 @@ const { color, profile } = Astro.props;
     <button id="menu-button"
       data-collapse-toggle="navbar-sticky"
       data-nav-toggle="#navbar-sticky"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-hidden focus:ring-2 focus:ring-[rgb(59_130_246/0.5)] focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       aria-controls="navbar-sticky"
       aria-expanded="false"
     >
@@ -45,7 +45,7 @@ const { color, profile } = Astro.props;
 </nav>
 
 <div class={`hidden md:hidden z-50 w-full ${color === "black" ? 'bg-semi-black' : "bg-purple-main "} absolute top-20 z-50`} id="menu-open">
-    <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
+    <div class="w-full bg-semi-black/20 h-fit z-50">
         <nav class="w-full flex flex-col gap-4 p-5 font-medium">
             <a class="font-medium active:scale-110 transition" href="/">INFORMACIÓN</a>
             <!-- <a class="font-medium" href="/">HABILIDADES</a> -->
